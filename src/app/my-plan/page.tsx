@@ -19,6 +19,7 @@ import {
   Bookmark,
   CheckCircle2,
 } from "lucide-react";
+import { EmptyState } from "@/components/EmptyState";
 
 export default function MyPlanPage() {
   const {
@@ -217,25 +218,16 @@ export default function MyPlanPage() {
 
       {/* Workout Cards List / Empty State */}
       {currentList.length === 0 ? (
-        /* Empty State */
-        <div className="bg-[#12141a] border border-[#1f232b] rounded-3xl p-12 sm:p-16 text-center max-w-lg mx-auto my-6 shadow-xl">
-          <div className="w-16 h-16 rounded-2xl bg-[#181c25] border border-[#1f232b] flex items-center justify-center mx-auto mb-4 text-zinc-500">
-            <Dumbbell className="w-8 h-8" />
-          </div>
-          <h2 className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white">
-            NOTHING HERE YET
-          </h2>
-          <p className="text-zinc-400 text-sm mt-2 mb-7 leading-relaxed">
-            Browse the library and add a lift to get today moving.
-          </p>
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2.5 bg-[#ccff00] hover:bg-[#d6ff33] text-[#090a0d] font-bold text-xs uppercase px-7 py-3.5 rounded-xl transition-all duration-200 shadow-lg active:scale-95"
-          >
-            <span>Go to Workouts</span>
-            <ArrowRight className="w-4 h-4 stroke-[2.5]" />
-          </Link>
-        </div>
+        <EmptyState
+          title="NOTHING HERE YET"
+          description={
+            activeTab === "plan"
+              ? "Browse the library and add a lift to get today moving."
+              : "No saved workouts yet. Save exercises from the library to review later."
+          }
+          ctaText="Go to workouts"
+          ctaHref="/"
+        />
       ) : (
         /* Workout Cards List */
         <div className="space-y-4">
