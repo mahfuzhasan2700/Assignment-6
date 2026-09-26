@@ -28,7 +28,7 @@
 ## 🔗 Project Links
 
 * **Live Demo:** [https://fitlog-workouts.netlify.app/](https://fitlog-workouts.netlify.app/)
-* **GitHub Repository:** [https://github.com/Perseus2700/Assignment-6](https://github.com/Perseus2700/Assignment-6)
+* **GitHub Repository:** [https://github.com/mahfuzhasan2700/Assignment-6](https://github.com/mahfuzhasan2700/Assignment-6)
 * **API Worker Service:** [https://api.abcz.workers.dev/api/fitlog](https://api.abcz.workers.dev/api/fitlog)
 
 ---
@@ -155,7 +155,7 @@ To guarantee that the application never produces errors or blank views during ev
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Perseus2700/Assignment-6.git
+git clone https://github.com/mahfuzhasan2700/Assignment-6.git
 cd Assignment-6/B14-A6-Fit-Log
 ```
 
