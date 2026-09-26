@@ -8,7 +8,7 @@
 ## 🔗 Project Links
 
 - **Live Demo:** [https://fitlog-workout.vercel.app](https://fitlog-workout.vercel.app) *(Replace with your live deployment URL)*
-- **GitHub Repository:** [https://github.com/your-username/fitlog-app](https://github.com/your-username/fitlog-app) *(Replace with your repository link)*
+- **GitHub Repository:** [https://github.com/Perseus2700/Assignment-6](https://github.com/Perseus2700/Assignment-6)
 
 ---
 
