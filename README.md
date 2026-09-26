@@ -17,9 +17,8 @@
   <a href="#-project-links">Live Demo</a> •
   <a href="#-key-features">Key Features</a> •
   <a href="#-project-architecture">Architecture</a> •
-  <a href="#-assignment-rubric-compliance">Rubric (60/60)</a> •
-  <a href="#-getting-started">Getting Started</a> •
-  <a href="#-api-integration">API Specs</a>
+  <a href="#-api-integration">API Specs</a> •
+  <a href="#-getting-started">Getting Started</a>
 </p>
 
 </div>
@@ -28,7 +27,7 @@
 
 ## 🔗 Project Links
 
-* **Live Demo:** [https://fitlog-workout.vercel.app](https://fitlog-workout.vercel.app) *(or your deployed Vercel URL)*
+* **Live Demo:** [https://fitlog-workouts.netlify.app/](https://fitlog-workouts.netlify.app/)
 * **GitHub Repository:** [https://github.com/Perseus2700/Assignment-6](https://github.com/Perseus2700/Assignment-6)
 * **API Worker Service:** [https://api.abcz.workers.dev/api/fitlog](https://api.abcz.workers.dev/api/fitlog)
 
@@ -133,30 +132,6 @@ B14-A6-Fit-Log/
 ├── package.json                    # Project dependencies & scripts
 └── tsconfig.json                   # TypeScript compiler configuration
 ```
-
----
-
-## 💯 Assignment Rubric Compliance (60 / 60 Marks)
-
-| Requirement Section | Specification | Implemented In | Status |
-| :--- | :--- | :--- | :---: |
-| **Basic Requirements** | Fully responsive layout (mobile, tablet, desktop) | Global Tailwind CSS grid/flex | ✅ **Met** |
-| | At least 8 Git commits with meaningful messages | 11 semantic commits in history | ✅ **Met** |
-| | Zero deployment / console errors | Type checked & build verified | ✅ **Met** |
-| | Comprehensive README with 5+ key features | [`README.md`](README.md) | ✅ **Met** |
-| **Main: 1. Navbar** | Left logo, middle links (`Workout`, `My Plan`), active state, Plan & Saved badge counters | [`Navbar.tsx`](src/components/Navbar.tsx) | ✅ **Met** |
-| **Main: 2. Hero Banner** | Eyebrow text, uppercase heading, exact subtitle, `"BROWSE WORKOUTS"` button anchor link, hero banner image | [`Hero.tsx`](src/components/Hero.tsx) | ✅ **Met** |
-| **Main: 3. The Library** | Heading, subtitle, 3×4 card grid, category tags, equipment, duration, calories, rating, detail link | [`LibrarySection.tsx`](src/components/LibrarySection.tsx) | ✅ **Met** |
-| **Main: 4. Detail Page** | Two-column layout, media on left, specs table (7 rows), ordered 4-step instructions, dual CTAs | [`src/app/workout/[id]/page.tsx`](src/app/workout/[id]/page.tsx) | ✅ **Met** |
-| **Main: 5. Detail Actions**| Buttons add to Plan/Saved, increment navbar counters, trigger notifications | [`PlanContext.tsx`](src/context/PlanContext.tsx) | ✅ **Met** |
-| **Main: 6. My Plan Page** | Title, subtitle, 3 stat cards starting at 0, tabs, loading state, workout cards, empty state | [`src/app/my-plan/page.tsx`](src/app/my-plan/page.tsx) | ✅ **Met** |
-| **Main: 7. Footer** | Dark footer, brand logo + FITLOG, exact copyright line | [`Footer.tsx`](src/components/Footer.tsx) | ✅ **Met** |
-| **Additional Must-Haves** | Themed 404 page, loading animation, toast notifications, error-free reload | App Router & Toast Context | ✅ **Met** |
-| **Challenge: C1** | "Sort By" dropdown (`Duration`, `Calories`, `Rating`), default Duration | [`LibrarySection.tsx`](src/components/LibrarySection.tsx) | ✅ **Met** |
-| **Challenge: C2** | Professional GitHub README documentation | [`README.md`](README.md) | ✅ **Met** |
-| **Challenge: C3** | "Mark as Done" and "Remove (X)" buttons with toast feedback | [`src/app/my-plan/page.tsx`](src/app/my-plan/page.tsx) | ✅ **Met** |
-| **Bonus Features** | `localStorage` persistence, search bar, muscle filters, 5-lift cap enforcement | Context & Components | 🌟 **Included** |
-
 ---
 
 ## 📡 API Integration & Resilience

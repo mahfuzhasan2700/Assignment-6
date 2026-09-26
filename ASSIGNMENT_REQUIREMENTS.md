@@ -163,5 +163,5 @@ Deploy your project on Vercel, Netlify, Cloudflare Pages, or anywhere else befor
 ## 📬 Submission
 Fill in both links before submitting:
 
-- Live Link:
+- Live Link: https://fitlog-workouts.netlify.app/
 - GitHub Repository Link: https://github.com/Perseus2700/Assignment-6
