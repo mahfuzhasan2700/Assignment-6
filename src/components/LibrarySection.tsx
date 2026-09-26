@@ -120,7 +120,7 @@ export const LibrarySection: React.FC = () => {
             THE LIBRARY
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base mt-2 max-w-xl">
-            Twelve lifts covering every major muscle group. Select an exercise to view technique specs or lock it into your day.
+            Twelve lifts covering every major muscle group.
           </p>
         </div>
 

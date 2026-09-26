@@ -53,7 +53,7 @@ export const Navbar: React.FC = () => {
                   : "text-zinc-400 hover:text-white"
               }`}
             >
-              Workouts
+              Workout
             </Link>
             <Link
               href="/my-plan"
@@ -130,7 +130,7 @@ export const Navbar: React.FC = () => {
                     : "text-zinc-300 hover:bg-[#151921]"
                 }`}
               >
-                Workouts
+                Workout
               </Link>
               <Link
                 href="/my-plan"

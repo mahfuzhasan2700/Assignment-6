@@ -253,7 +253,7 @@ export default function WorkoutDetailPage() {
           {/* Instructions Section */}
           <div className="bg-[#12141a] border border-[#1f232b] rounded-2xl p-5 shadow-lg">
             <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 font-display mb-4">
-              Execution Technique (4 Steps)
+              INSTRUCTIONS
             </h3>
 
             <ol className="space-y-3">
