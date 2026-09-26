@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState } from "react";
@@ -175,20 +176,18 @@ export default function MyPlanPage() {
       <div className="flex items-center gap-3 border-b border-[#1f232b] pb-4 mb-8">
         <button
           onClick={() => setActiveTab("plan")}
-          className={`flex items-center gap-2.5 px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all ${
-            activeTab === "plan"
-              ? "bg-[#ccff00] text-[#090a0d] shadow-sm"
-              : "bg-[#13161d] text-zinc-400 hover:text-white hover:bg-[#181c25] border border-[#1f232b]"
-          }`}
+          className={`flex items-center gap-2.5 px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all ${activeTab === "plan"
+            ? "bg-[#ccff00] text-[#090a0d] shadow-sm"
+            : "bg-[#13161d] text-zinc-400 hover:text-white hover:bg-[#181c25] border border-[#1f232b]"
+            }`}
         >
           <Calendar className="w-4 h-4" />
           <span>Today&apos;s Plan</span>
           <span
-            className={`px-1.5 py-0.2 rounded-full text-[10px] font-black ${
-              activeTab === "plan"
-                ? "bg-[#090a0d] text-[#ccff00]"
-                : "bg-[#1f232b] text-zinc-300"
-            }`}
+            className={`px-1.5 py-0.2 rounded-full text-[10px] font-black ${activeTab === "plan"
+              ? "bg-[#090a0d] text-[#ccff00]"
+              : "bg-[#1f232b] text-zinc-300"
+              }`}
           >
             {todayPlan.length}
           </span>
@@ -196,20 +195,18 @@ export default function MyPlanPage() {
 
         <button
           onClick={() => setActiveTab("saved")}
-          className={`flex items-center gap-2.5 px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all ${
-            activeTab === "saved"
-              ? "bg-[#ccff00] text-[#090a0d] shadow-sm"
-              : "bg-[#13161d] text-zinc-400 hover:text-white hover:bg-[#181c25] border border-[#1f232b]"
-          }`}
+          className={`flex items-center gap-2.5 px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all ${activeTab === "saved"
+            ? "bg-[#ccff00] text-[#090a0d] shadow-sm"
+            : "bg-[#13161d] text-zinc-400 hover:text-white hover:bg-[#181c25] border border-[#1f232b]"
+            }`}
         >
           <Bookmark className="w-4 h-4" />
           <span>Saved</span>
           <span
-            className={`px-1.5 py-0.2 rounded-full text-[10px] font-black ${
-              activeTab === "saved"
-                ? "bg-[#090a0d] text-[#ccff00]"
-                : "bg-[#1f232b] text-zinc-300"
-            }`}
+            className={`px-1.5 py-0.2 rounded-full text-[10px] font-black ${activeTab === "saved"
+              ? "bg-[#090a0d] text-[#ccff00]"
+              : "bg-[#1f232b] text-zinc-300"
+              }`}
           >
             {savedWorkouts.length}
           </span>
@@ -237,11 +234,10 @@ export default function MyPlanPage() {
             return (
               <div
                 key={item.id}
-                className={`bg-[#12141a] border rounded-2xl p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all duration-200 shadow-md ${
-                  isCompleted
-                    ? "border-emerald-500/40 bg-[#101915]/60 opacity-80"
-                    : "border-[#1f232b] hover:border-zinc-700"
-                }`}
+                className={`bg-[#12141a] border rounded-2xl p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all duration-200 shadow-md ${isCompleted
+                  ? "border-emerald-500/40 bg-[#101915]/60 opacity-80"
+                  : "border-[#1f232b] hover:border-zinc-700"
+                  }`}
               >
                 {/* Left: Thumbnail & Info */}
                 <div className="flex items-center gap-4 min-w-0">
@@ -273,9 +269,8 @@ export default function MyPlanPage() {
                     </div>
 
                     <h3
-                      className={`font-display text-lg sm:text-xl font-bold uppercase tracking-wide truncate ${
-                        isCompleted ? "line-through text-zinc-400" : "text-white"
-                      }`}
+                      className={`font-display text-lg sm:text-xl font-bold uppercase tracking-wide truncate ${isCompleted ? "line-through text-zinc-400" : "text-white"
+                        }`}
                     >
                       {item.name}
                     </h3>
@@ -320,11 +315,10 @@ export default function MyPlanPage() {
                   {activeTab === "plan" && (
                     <button
                       onClick={() => toggleMarkAsDone(item.id)}
-                      className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-colors ${
-                        isCompleted
-                          ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 hover:bg-emerald-500/30"
-                          : "bg-[#1f232b] hover:bg-[#ccff00] text-zinc-200 hover:text-[#090a0d] border border-transparent"
-                      }`}
+                      className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-colors ${isCompleted
+                        ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 hover:bg-emerald-500/30"
+                        : "bg-[#1f232b] hover:bg-[#ccff00] text-zinc-200 hover:text-[#090a0d] border border-transparent"
+                        }`}
                       title={isCompleted ? "Mark incomplete" : "Mark as done"}
                     >
                       <Check className="w-3.5 h-3.5 stroke-[2.5]" />
