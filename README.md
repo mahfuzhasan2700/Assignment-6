@@ -1,33 +1,53 @@
-# 🏋️‍♂️ FITLOG — Workout Library & Daily Training Log
-
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-fitlog--workouts.netlify.app-ccff00?style=for-the-badge&logo=netlify&logoColor=090a0d&labelColor=151921)](https://fitlog-workouts.netlify.app/)
-[![Next.js](https://img.shields.io/badge/Next.js-16.3-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19.2-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&logoColor=black&labelColor=151921)](LICENSE)
+<!-- ANIMATED HEADER BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:090a0d,70:12141a,100:ccff00&height=220&section=header&text=FITLOG&fontSize=70&fontAlignY=36&fontColor=ffffff&desc=TRAIN%20WITH%20INTENT.%20LOG%20EVERY%20SET.&descAlignY=62&descAlign=50&descSize=18&stroke=ccff00&strokeWidth=1" width="100%" alt="FitLog Banner" />
 
-<br />
+<!-- ANIMATED TYPING SUBTITLE -->
+<a href="https://fitlog-workouts.netlify.app/">
+  <img src="https://readme-typing-svg.demolab.com?font=Oswald&weight=700&size=24&duration=2600&pause=1000&color=CCFF00&center=true&vCenter=true&width=750&height=50&lines=TRAIN+WITH+INTENT.+LOG+EVERY+SET.;A+DARK+HIGH-PERFORMANCE+GYM+COMPANION.;CURATE+A+FOCUSED+5-LIFT+DAILY+WORKBENCH.;REAL-TIME+CALORIES+%26+DURATION+TELEMETRY.;CELEBRATE+COMPLETED+SETS+WITH+CONFETTI." alt="Animated Tagline" />
+</a>
 
-> ### **"TRAIN WITH INTENT. LOG EVERY SET."**
-> *A high-performance, dark-aesthetic gym training companion engineered with the Next.js 16 App Router, React 19, and Tailwind CSS v4. Curate your daily routine, lock exercises into a focused 5-lift workbench, monitor duration and caloric expenditure in real time, and celebrate completed sets.*
-
-<br />
-
+<!-- SHIELDS & BADGES -->
 <p align="center">
-  <a href="#-live-deployment--links"><strong>Live Demo</strong></a> •
-  <a href="#-product-overview"><strong>Overview</strong></a> •
-  <a href="#-core-capabilities"><strong>Capabilities</strong></a> •
-  <a href="#-key-features"><strong>Key Features</strong></a> •
-  <a href="#-system-architecture"><strong>Architecture</strong></a> •
-  <a href="#-technology-stack"><strong>Tech Stack</strong></a> •
-  <a href="#-api-specifications--resilience"><strong>API Specs</strong></a> •
-  <a href="#-design-system"><strong>Design System</strong></a> •
-  <a href="#-getting-started"><strong>Getting Started</strong></a>
+  <a href="https://fitlog-workouts.netlify.app/"><img src="https://img.shields.io/badge/Live_Demo-fitlog--workouts.netlify.app-ccff00?style=for-the-badge&logo=netlify&logoColor=090a0d&labelColor=151921" alt="Live Demo" /></a>
+  <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-16.3-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" /></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19.2-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&logoColor=black&labelColor=151921" alt="License" /></a>
 </p>
 
+<!-- QUICK NAVIGATION PILLS -->
+<p align="center">
+  <a href="#-live-deployment--links"><strong>🌐 Live Demo</strong></a> •
+  <a href="#-interactive-dashboard-preview"><strong>⚡ Interactive Preview</strong></a> •
+  <a href="#-product-overview"><strong>📖 Overview</strong></a> •
+  <a href="#-training-lifecycle-workflow"><strong>🔄 Lifecycle</strong></a> •
+  <a href="#-core-capabilities"><strong>⚡ Capabilities</strong></a> •
+  <a href="#-key-features"><strong>✨ Features</strong></a> •
+  <a href="#-system-architecture"><strong>🏗️ Architecture</strong></a> •
+  <a href="#-technology-stack"><strong>🛠️ Tech Stack</strong></a> •
+  <a href="#-getting-started"><strong>🚀 Getting Started</strong></a>
+</p>
+
+</div>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:090a0d,50:ccff00,100:090a0d&height=4&width=100%" alt="Divider" />
+</div>
+
+<br />
+
+## ⚡ Interactive Dashboard Preview
+
+<div align="center">
+  <a href="https://fitlog-workouts.netlify.app/">
+    <img src="assets/fitlog-animated-preview.svg" width="100%" alt="FitLog Live Animated Dashboard Preview" />
+  </a>
+  <p align="center">
+    <em>▲ Live animated preview of the FitLog Daily Workbench featuring real-time telemetry gauges, dynamic progress bars, and set completion effects.</em>
+  </p>
 </div>
 
 ---
@@ -36,7 +56,7 @@
 
 | Resource | Link | Description | Status |
 | :--- | :--- | :--- | :--- |
-| 🌐 **Production Web App** | [fitlog-workouts.netlify.app](https://fitlog-workouts.netlify.app/) | Deployed production release hosted on Netlify | ![Netlify](https://img.shields.io/badge/Status-Active-22c55e?style=flat-square) |
+| 🌐 **Production Web App** | [fitlog-workouts.netlify.app](https://fitlog-workouts.netlify.app/) | Deployed production release hosted on Netlify | ![Netlify](https://img.shields.io/badge/Status-🟢_Active-22c55e?style=flat-square) |
 | 🐙 **Source Code Repository** | [github.com/mahfuzhasan2700/Assignment-6](https://github.com/mahfuzhasan2700/Assignment-6) | Full source code with version history | ![GitHub](https://img.shields.io/badge/GitHub-Public-blue?style=flat-square) |
 | ⚡ **API Service** | [api.abcz.workers.dev/api/fitlog](https://api.abcz.workers.dev/api/fitlog) | Cloudflare Worker REST API service | ![API](https://img.shields.io/badge/Cloudflare-REST_API-f38020?style=flat-square) |
 | 🎨 **Design Assets** | [Fit Log.fig](UI/Fit%20Log.fig) • [Fit Log.penpot](UI/Fit%20Log.penpot) | Figma and Penpot interface design systems | ![Design](https://img.shields.io/badge/Design-Figma_%26_Penpot-a855f7?style=flat-square) |
@@ -51,6 +71,17 @@ Traditional fitness apps often overwhelm users with bloated social feeds, mandat
 
 > [!NOTE]
 > **Enterprise-Grade Offline Resilience:** FitLog features an automated failover mechanism. If the external API endpoint encounters downtime, rate limits, or network disruption, the application seamlessly hydrates from an internal offline dataset—guaranteeing 100% operational uptime without interruption.
+
+---
+
+## 🔄 Training Lifecycle Workflow
+
+<div align="center">
+  <img src="assets/fitlog-animated-workflow.svg" width="100%" alt="FitLog 4-Step Animated Workout Lifecycle" />
+  <p align="center">
+    <em>▲ Continuous unidirectional workflow: Browse & Sort ➔ Daily 5-Lift Cap ➔ Live Telemetry Recalculation ➔ Log & Confetti Celebration.</em>
+  </p>
+</div>
 
 ---
 
@@ -182,40 +213,42 @@ flowchart TD
 FitLog/
 ├── public/
 │   ├── assets/
-│   │   ├── banner.png              # Gym equipment hero illustration
-│   │   └── logo.png                # Brand logo asset
-│   └── favicon.ico                 # Application favicon
+│   │   ├── banner.png                     # Gym equipment hero illustration
+│   │   ├── logo.png                       # Brand logo asset
+│   │   ├── fitlog-animated-preview.svg    # Animated UI workbench preview
+│   │   └── fitlog-animated-workflow.svg   # Animated 4-step workout lifecycle
+│   └── favicon.ico                        # Application favicon
 ├── src/
 │   ├── app/
-│   │   ├── layout.tsx              # Root HTML shell, fonts & global providers
-│   │   ├── page.tsx                # Home page (Hero + Library Section)
-│   │   ├── not-found.tsx           # Custom 404 error page ("Lost in the Gym")
+│   │   ├── layout.tsx                     # Root HTML shell, fonts & global providers
+│   │   ├── page.tsx                       # Home page (Hero + Library Section)
+│   │   ├── not-found.tsx                  # Custom 404 error page ("Lost in the Gym")
 │   │   ├── my-plan/
-│   │   │   └── page.tsx            # My Plan page (Live metrics & dual tabs)
+│   │   │   └── page.tsx                   # My Plan page (Live metrics & dual tabs)
 │   │   └── workout/
 │   │       └── [id]/
-│   │           └── page.tsx        # Dynamic workout detail view (2-column layout)
+│   │           └── page.tsx               # Dynamic workout detail view (2-column layout)
 │   ├── components/
-│   │   ├── Navbar.tsx              # Sticky header with live plan/saved badges
-│   │   ├── Hero.tsx                # Hero banner with Oswald typography & CTA
-│   │   ├── LibrarySection.tsx      # 3x4 workout grid, search, and dynamic sorting
-│   │   ├── WorkoutCard.tsx         # Exercise card with category tags & stats row
-│   │   ├── EmptyState.tsx          # Reusable zero-data state component
-│   │   └── Footer.tsx              # Dark-themed brand copyright footer
+│   │   ├── Navbar.tsx                     # Sticky header with live plan/saved badges
+│   │   ├── Hero.tsx                       # Hero banner with Oswald typography & CTA
+│   │   ├── LibrarySection.tsx             # 3x4 workout grid, search, and dynamic sorting
+│   │   ├── WorkoutCard.tsx                # Exercise card with category tags & stats row
+│   │   ├── EmptyState.tsx                 # Reusable zero-data state component
+│   │   └── Footer.tsx                     # Dark-themed brand copyright footer
 │   ├── context/
-│   │   ├── PlanContext.tsx         # Workout state, localStorage sync & metrics
-│   │   └── ToastContext.tsx        # Floating notification system
+│   │   ├── PlanContext.tsx                # Workout state, localStorage sync & metrics
+│   │   └── ToastContext.tsx               # Floating notification system
 │   ├── data/
-│   │   └── fallbackWorkouts.ts     # Offline resilient dataset & API constants
+│   │   └── fallbackWorkouts.ts            # Offline resilient dataset & API constants
 │   └── types/
-│       └── workout.ts              # TypeScript interfaces (Workout, SortOption)
+│       └── workout.ts                     # TypeScript interfaces (Workout, SortOption)
 ├── UI/
-│   ├── Fit Log.fig                 # Figma design system file
-│   └── Fit Log.penpot              # Penpot cross-platform design file
-├── README.md                       # Repository documentation
-├── netlify.toml                    # Netlify production build configuration
-├── package.json                    # Dependencies & execution scripts
-└── tsconfig.json                   # Strict TypeScript compiler options
+│   ├── Fit Log.fig                        # Figma design system file
+│   └── Fit Log.penpot                     # Penpot cross-platform design file
+├── README.md                              # Repository documentation
+├── netlify.toml                           # Netlify production build configuration
+├── package.json                           # Dependencies & execution scripts
+└── tsconfig.json                          # Strict TypeScript compiler options
 ```
 
 ---
@@ -345,5 +378,10 @@ The application layout has been optimized across standard device breakpoints:
 <br />
 
 <div align="center">
-  <sub>© 2026 FitLog — Workout Library. Train hard, log honest.</sub>
+
+<!-- ANIMATED FOOTER BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:090a0d,70:12141a,100:ccff00&height=120&section=footer" width="100%" alt="Footer Banner" />
+
+<sub>© 2026 FitLog — Workout Library. Train hard, log honest.</sub>
+
 </div>
