@@ -1,314 +1,215 @@
 <div align="center">
 
-<!-- HERO 3D BANNER IMAGE -->
-<a href="https://fitlog-workouts.netlify.app/">
-  <img src="assets/banner.png" width="340" alt="FitLog 3D Equipment" style="filter: drop-shadow(0 15px 30px rgba(204,255,0,0.25));" />
-</a>
+# FitLog
 
-# 🏋️‍♂️ <span style="color:#ccff00;">FITLOG</span>
-### **TRAIN WITH INTENT. LOG EVERY SET.**
+### TRAIN WITH INTENT. LOG EVERY SET.
 
-*A high-performance, dark-aesthetic gym training companion engineered with the Next.js 16 App Router, React 19, and Tailwind CSS v4. Curate your daily routine, lock exercises into a focused 5-lift workbench, monitor duration and caloric expenditure in real time, and celebrate completed sets.*
+A dark-themed workout library and daily training log built with Next.js 16 App Router, React 19, and Tailwind CSS v4. Browse foundational gym lifts, inspect technical execution guides, add exercises to a capped five-lift daily routine or a saved list, and monitor training volume in real time.
 
 <br />
 
-<!-- VIBRANT BADGES -->
-<p align="center">
-  <a href="https://fitlog-workouts.netlify.app/"><img src="https://img.shields.io/badge/Live_Demo-fitlog--workouts.netlify.app-ccff00?style=for-the-badge&logo=netlify&logoColor=090a0d&labelColor=151921" alt="Live Demo" /></a>
-  <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-16.3-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" /></a>
-  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19.2-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /></a>
-  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
-  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&logoColor=black&labelColor=151921" alt="License" /></a>
-</p>
+[![Live Demo](https://img.shields.io/badge/Live_Demo-fitlog--workouts.netlify.app-ccff00?style=flat-square&labelColor=151921)](https://fitlog-workouts.netlify.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-16.3.6-black?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.2.8-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-<!-- QUICK NAVIGATION PILLS -->
+<br />
+
 <p align="center">
-  <a href="#-interactive-product-walkthrough"><strong>🎬 Product Demo</strong></a> •
-  <a href="#-training-lifecycle-workflow"><strong>🔄 Lifecycle</strong></a> •
-  <a href="#-feature-spotlights--interactive-gifs"><strong>✨ Feature GIFs</strong></a> •
-  <a href="#-telemetry-engine-preview"><strong>📊 Live Telemetry</strong></a> •
-  <a href="#-responsive-multi-device-preview"><strong>📱 Responsive View</strong></a> •
-  <a href="#-system-architecture"><strong>🏗️ Architecture</strong></a> •
-  <a href="#-technology-stack"><strong>🛠️ Tech Stack</strong></a> •
-  <a href="#-getting-started"><strong>🚀 Getting Started</strong></a>
+  <a href="#demo">Demo</a> •
+  <a href="#links">Links</a> •
+  <a href="#overview">Overview</a> •
+  <a href="#key-features">Key Features</a> •
+  <a href="#architecture">Architecture</a> •
+  <a href="#tech-stack">Tech Stack</a> •
+  <a href="#project-structure">Project Structure</a> •
+  <a href="#api-reference">API Reference</a> •
+  <a href="#getting-started">Getting Started</a>
 </p>
 
 </div>
 
 ---
 
-## 🎬 Interactive Product Walkthrough
+## 🎬 Demo
 
 <div align="center">
   <a href="https://fitlog-workouts.netlify.app/">
-    <img src="assets/demo.gif" width="100%" alt="FitLog Product Walkthrough Animation" style="border-radius: 14px; border: 2px solid #1f232b; box-shadow: 0 10px 40px rgba(0,0,0,0.8);" />
+    <img src="assets/demo.gif" width="100%" alt="FitLog application walkthrough demonstration" />
   </a>
-  <p align="center">
-    <em>▲ <strong>Full interactive recording:</strong> Real-time dynamic sorting ➔ Two-column exercise detail inspection ➔ Adding to Today's Plan ➔ Live telemetry metrics calculation on <code>/my-plan</code> ➔ Set completion checkmark &amp; celebratory confetti burst.</em>
-  </p>
+  <p><em>Demonstration showing library sorting, workout inspection, adding to today's plan, live metrics updating on /my-plan, and set completion.</em></p>
 </div>
 
 ---
 
-## 🔗 Live Deployments & Endpoints
+## 🔗 Links
 
-| Resource | Link | Description | Status |
-| :--- | :--- | :--- | :--- |
-| 🌐 **Production Web Application** | [fitlog-workouts.netlify.app](https://fitlog-workouts.netlify.app/) | Deployed production release hosted on Netlify | ![Netlify](https://img.shields.io/badge/Status-🟢_Active-22c55e?style=flat-square) |
-| 🐙 **Source Code Repository** | [github.com/mahfuzhasan2700/Assignment-6](https://github.com/mahfuzhasan2700/Assignment-6) | Official GitHub repository | ![GitHub](https://img.shields.io/badge/GitHub-Public-blue?style=flat-square) |
-| ⚡ **API Service Endpoint** | [api.abcz.workers.dev/api/fitlog](https://api.abcz.workers.dev/api/fitlog) | Cloudflare Worker REST API service | ![API](https://img.shields.io/badge/Cloudflare-REST_API-f38020?style=flat-square) |
-| 🎨 **Design Source Files** | [Fit Log.fig](UI/Fit%20Log.fig) • [Fit Log.penpot](UI/Fit%20Log.penpot) | Figma and Penpot UI design files | ![Design](https://img.shields.io/badge/Design-Figma_%26_Penpot-a855f7?style=flat-square) |
-
----
-
-## 📖 Product Overview
-
-**FitLog** is an industrial-aesthetic gym training platform engineered for athletes and lifters who demand structured training volume, deliberate exercise selection, and frictionless set tracking.
-
-Traditional fitness apps often overwhelm users with bloated social feeds, mandatory subscription tiers, and convoluted interfaces. FitLog eliminates that friction with a focused, high-contrast obsidian-and-lime (`#ccff00`) interface. Lifters can explore a comprehensive library of compound and isolation lifts, inspect rigorous technical execution guides, organize lifts into a focused **5-exercise daily workbench**, and monitor training duration and estimated caloric burn through a live telemetry dashboard.
-
-> [!NOTE]
-> **Enterprise-Grade Offline Resilience:** FitLog features an automated failover mechanism. If the external API endpoint encounters downtime, rate limits, or network disruption, the application seamlessly hydrates from an internal offline dataset—guaranteeing 100% operational uptime without interruption.
+| Resource | URL | Description |
+| :--- | :--- | :--- |
+| Live Application | [fitlog-workouts.netlify.app](https://fitlog-workouts.netlify.app/) | Production deployment hosted on Netlify |
+| GitHub Repository | [github.com/mahfuzhasan2700/Assignment-6](https://github.com/mahfuzhasan2700/Assignment-6) | Source code repository and commit history |
+| Worker API | [api.abcz.workers.dev/api/fitlog](https://api.abcz.workers.dev/api/fitlog) | Cloudflare Worker REST API for workout data |
+| UI Design Files | [UI/Fit Log.fig](UI/Fit%20Log.fig) • [UI/Fit Log.penpot](UI/Fit%20Log.penpot) | Figma and Penpot workspace design files |
 
 ---
 
-## 🔄 Training Lifecycle Workflow
+## 📖 Overview
 
-<div align="center">
-  <img src="assets/fitlog-animated-workflow.svg" width="100%" alt="FitLog 4-Step Animated Workout Lifecycle" style="border-radius: 12px; border: 1px solid #1f232b;" />
-  <p align="center">
-    <em>▲ <strong>Unidirectional Training Cycle:</strong> 01. Browse &amp; Dynamic Sort ➔ 02. Daily 5-Lift Discipline Cap ➔ 03. Live Telemetry Recalculation ➔ 04. Log &amp; Confetti Celebration.</em>
-  </p>
-</div>
+Most workout tracking applications require user accounts, subscription tiers, and multi-step forms for basic logging. FitLog removes that friction with a focused, client-first interface designed for fast exercise selection and daily volume tracking in low-light gym environments.
+
+The workflow centers around an intentional five-lift daily workbench. Users select lifts from an anatomical library, inspect four-step execution cues, monitor live aggregations for active duration and caloric burn, and mark sets completed during training sessions.
 
 ---
 
-## ⚡ Core Capabilities
+## ✨ Key Features
 
-| Capability | Module | Description | Technical Implementation |
-| :--- | :--- | :--- | :--- |
-| **Multi-Attribute Sorting** | Workout Library | Dynamic sorting across Duration, Calories, and User Rating with zero reload latency | `useMemo` client-side sorting engine with animated dropdown |
-| **Two-Column Detail View** | Workout Detail | High-resolution exercise visual paired with a 7-point technical specification panel | Dynamic routing (`/workout/[id]`) with responsive two-column grid |
-| **Real-Time Telemetry** | Daily Workbench | Real-time session analytics computing active exercises, total minutes, and projected calories | React Context calculation engine with dynamic progress bar |
-| **Dual-Tab Plan Workspace** | Plan Management | Clean separation between Today's Plan and Saved exercises with pill counter sync | Local storage synchronization with persistent state cache |
-| **Smart Daily Discipline Cap** | Volume Control | Enforces an intentional 5-lift cap per training session to prevent overtraining | Client validation layer with contextual warning alerts |
-| **Set Completion & Feedback** | Interactive Logging | Mark lifts completed with strike-through styling, badges, and celebratory confetti | Dynamic status toggle paired with Canvas Confetti animation |
-| **Fault-Tolerant Hydration** | Data Layer | Dual-tier data strategy combining live REST API fetching with offline resilience | Fail-safe hydration fallback to prevent broken UI states |
-| **Industrial Dark Theme** | Visual Identity | High-contrast palette designed for low-light gym environments with a custom 404 page | Tailwind CSS v4 design tokens with Oswald &amp; Inter typography |
+1. **Workout Library and Multi-Attribute Sorting**
+   - Displays 12 foundational gym exercises covering Chest, Back, Legs, Arms, Core, Shoulders, and Full Body groups.
+   - Dynamic sorting menu reorders the grid by Duration (descending minutes), Calories Burned (descending kcal), or User Rating without page refreshes.
+   - Cards display category tags, equipment specifications, and a three-point metrics row.
 
----
+2. **Two-Column Workout Detail View**
+   - Individualized `/workout/[id]` routes rendering full-height exercise illustrations on the left and technical specifications on the right.
+   - Key specifications panel displaying equipment, difficulty, sets, reps, duration, calories burned, and user rating.
+   - Numbered four-step instructions detailing setup, unrack/grip, execution range of motion, and safety rules.
+   - Action buttons to add to today's plan or save for later with duplicate detection and toast feedback.
 
-## ✨ Feature Spotlights & Interactive GIFs
+3. **Live Telemetry Dashboard (`/my-plan`)**
+   - Three summary cards compute active exercises count, total estimated minutes, and projected caloric expenditure.
+   - Derived calculations update immediately through memoized selectors upon adding, removing, or toggling exercises.
+   - Animated visual progress bar displays active routine size against the daily five-lift cap.
 
-### 1. 🏋️ Multi-Attribute Dynamic Sorting Engine
-Reorder the workout roster in real time using the interactive **Sort By** dropdown menu without page refreshes.
+4. **Dual-Tab Organization and Volume Cap**
+   - Tabbed navigation toggles between Today's Plan and Saved routines with persistent count indicators.
+   - Enforces a five-lift limit on Today's Plan to prevent overtraining, displaying warning notifications if the cap is reached.
+   - Dedicated placeholder states with direct navigation buttons when lists are empty.
 
-<div align="center">
-  <img src="assets/feature-sorting.gif" width="100%" alt="Dynamic Sorting Engine GIF" style="border-radius: 12px; border: 1px solid #1f232b;" />
-</div>
+5. **Completion Logging, Removal, and Reset**
+   - Completion toggle applies visual strike-through styling, adds an emerald badge, and triggers a canvas-confetti animation.
+   - One-click removal button clears individual items with toast notifications.
+   - Reset button clears the active daily plan to prepare for a new session.
 
-* ⏱️ **Duration Sorting:** Prioritizes longest workouts for high-volume training blocks.
-* 🔥 **Calories Sorting:** Reorders lifts by descending projected energy expenditure.
-* ⭐ **Rating Sorting:** Surfaces the community's highest-rated exercises first.
-
----
-
-### 2. 📋 Deep Technical Detail View & Execution Guide
-Individualized workout pages (`/workout/[id]`) featuring a 2-column layout with high-resolution imagery and technical specifications.
-
-<div align="center">
-  <img src="assets/feature-details.gif" width="100%" alt="Workout Details and Add To Plan GIF" style="border-radius: 12px; border: 1px solid #1f232b;" />
-</div>
-
-* **7-Point Technical Specification Panel:**
-  ```text
-  EQUIPMENT  •  DIFFICULTY  •  SETS  •  REPS  •  DURATION  •  CALORIES  •  RATING
-  ```
-* **4-Step Execution Instructions:** Numbered technique cues outlining setup, unrack/grip, execution tempo, and safety rules.
-* **Instant Action Triggers:** *"Add to today's plan"* and *"Save for later"* buttons with active state detection and animated toast feedback.
+6. **Fault-Tolerant Hydration and Persistence**
+   - Attempts remote API fetching with `{ cache: "no-store" }` and automatically fails over to local dataset if unreachable.
+   - Synchronizes active plan and saved lists to browser `localStorage` across page reloads.
+   - Fully responsive layout across mobile, tablet, and desktop viewports with a custom gym-themed 404 page for unmatched routes.
 
 ---
 
-### 3. 🎉 Set Completion & Canvas Confetti Celebration
-Check off finished exercises in Today's Plan to trigger immediate visual and psychological gratification.
+## 🏗️ Architecture
 
-<div align="center">
-  <img src="assets/feature-celebration.gif" width="100%" alt="Mark As Done and Confetti Celebration GIF" style="border-radius: 12px; border: 1px solid #1f232b;" />
-</div>
-
-* **Interactive "Mark as Done":** Applies strike-through styling, adds an emerald `DONE` status badge, and fires a celebratory multi-colored **Canvas Confetti** burst (`#ccff00`).
-* **One-Click Item Removal:** Dedicated `X` button with instant feedback toast notifications.
-* **Session Reset:** One-click *"Reset Today's Plan"* action to clear finished workouts and start fresh.
-
----
-
-## 📊 Telemetry Engine Preview
-
-Live session analytics recalculate automatically as lifts are added, removed, or completed.
-
-<div align="center">
-  <img src="assets/fitlog-animated-preview.svg" width="100%" alt="FitLog Live Animated Workbench Dashboard" style="border-radius: 12px; border: 1px solid #1f232b;" />
-  <p align="center">
-    <em>▲ Real-time telemetry dashboard featuring animated progress gauges for the 5-lift cap, training minutes, and caloric burn.</em>
-  </p>
-</div>
-
-* 🎯 **Exercises Gauge:** Active lifts counter with dynamic progress bar tracking toward the 5-lift cap.
-* ⏱️ **Duration Gauge:** Aggregated session training duration calculated automatically.
-* 🔥 **Caloric Gauge:** Projected energy expenditure based on active routine selections.
-
----
-
-## 📱 Responsive Multi-Device Preview
-
-FitLog delivers a unified experience across mobile smartphones, tablets, laptops, and ultra-wide desktop monitors.
-
-<div align="center">
-  <img src="assets/figma_overview_preview.png" width="100%" alt="FitLog Multi-Device Layout Overview" style="border-radius: 12px; border: 1px solid #1f232b;" />
-  <p align="center">
-    <em>▲ Multi-device responsive layout specification: Desktop 3×4 library grid, tablet 2-column view, and mobile stacked touch experience.</em>
-  </p>
-</div>
-
-* 📱 **Mobile Viewports (320px – 640px):** Single-column stacked layout, drawer navigation menu, touch-friendly CTA buttons, and responsive stats cards.
-* 💻 **Tablet Viewports (641px – 1024px):** 2-column exercise grid, side-by-side metric dashboards, and optimized touch spacing.
-* 🖥️ **Desktop Viewports (1025px+):** Strict 3×4 library grid, two-column detail inspection view, and sticky header with real-time counters.
-
----
-
-## 🏗️ System Architecture
-
-FitLog leverages the **Next.js App Router** with a unidirectional client-state flow driven by React Context, local persistence, and high-availability API hydration.
+FitLog uses Next.js App Router for page routing, React Context for state management, and an automated fallback layer for offline resilience.
 
 ```mermaid
 flowchart TD
-    subgraph Remote["🌐 External Services"]
+    subgraph Remote["Remote Service"]
         API["Cloudflare Worker API<br/>/api/fitlog & /api/fitlog/:id"]
     end
 
-    subgraph DataLayer["💾 Data & Persistence Layer"]
-        Fallback["Local Fallback Dataset<br/>(fallbackWorkouts.ts)"]
-        LocalStorage["Web Storage<br/>(localStorage: plan & saved)"]
+    subgraph Data["Data & Persistence"]
+        Fallback["Local Dataset<br/>(fallbackWorkouts.ts)"]
+        Storage["Browser Storage<br/>(localStorage)"]
     end
 
-    subgraph StateManagement["⚡ Global State Layer"]
-        PlanCtx["PlanContext<br/>• todayPlan [ ]<br/>• savedWorkouts [ ]<br/>• metrics (calc)<br/>• 5-Lift Cap Enforcement"]
-        ToastCtx["ToastContext<br/>• Floating Toast Alerts"]
+    subgraph State["React Context"]
+        PlanCtx["PlanContext<br/>todayPlan, savedWorkouts, metrics"]
+        ToastCtx["ToastContext<br/>toast notifications"]
     end
 
-    subgraph UIComponents["🖥️ Presentation Layer (Next.js App Router)"]
-        Nav["Navbar<br/>(Real-Time Badges: Plan & Saved)"]
-        Home["/ (Home Page)<br/>• Hero Banner<br/>• The Library (3x4 Grid)<br/>• Dynamic Sort Engine"]
-        Detail["/workout/:id<br/>• 2-Column Detail View<br/>• 7-Point Specs Panel<br/>• 4-Step Instructions"]
-        MyPlan["/my-plan<br/>• 3 Live Metric Cards<br/>• Dual Tabs (Plan / Saved)<br/>• Mark Done & Interactive Confetti<br/>• Empty State"]
-        NotFound["/not-found<br/>• 404 Lost in the Gym"]
+    subgraph Pages["App Router Pages"]
+        Home["/ (Home)<br/>Hero + LibrarySection"]
+        Detail["/workout/:id<br/>Workout Details"]
+        PlanPage["/my-plan<br/>Tabs + Metrics"]
+        NotFound["not-found.tsx<br/>Custom 404"]
     end
 
-    API -->|Fetch fresh data| Home
-    API -->|Fetch single lift| Detail
-    Fallback -.->|Graceful Fallback| Home
-    Fallback -.->|Graceful Fallback| Detail
-    LocalStorage <-->|Sync State| PlanCtx
-    PlanCtx -->|State & Metrics| Nav
-    PlanCtx -->|State & Metrics| Detail
-    PlanCtx -->|State & Metrics| MyPlan
-    ToastCtx -->|Notifications| Detail
-    ToastCtx -->|Notifications| MyPlan
-
-    style API fill:#ea580c,stroke:#fff,color:#fff
-    style Fallback fill:#16a34a,stroke:#fff,color:#fff
-    style LocalStorage fill:#0284c7,stroke:#fff,color:#fff
-    style PlanCtx fill:#1e293b,stroke:#ccff00,color:#ccff00,stroke-width:2px
-    style ToastCtx fill:#1e293b,stroke:#38bdf8,color:#38bdf8,stroke-width:2px
-    style Home fill:#0f172a,stroke:#334155,color:#fff
-    style Detail fill:#0f172a,stroke:#334155,color:#fff
-    style MyPlan fill:#0f172a,stroke:#334155,color:#fff
-    style Nav fill:#0f172a,stroke:#334155,color:#fff
+    API -->|HTTP GET| Home
+    API -->|HTTP GET| Detail
+    Fallback -.->|Failover| Home
+    Fallback -.->|Failover| Detail
+    Storage <-->|Sync| PlanCtx
+    PlanCtx --> Home
+    PlanCtx --> Detail
+    PlanCtx --> PlanPage
+    ToastCtx --> Detail
+    ToastCtx --> PlanPage
 ```
 
 ---
 
-## 🛠️ Technology Stack
+## 🛠️ Tech Stack
 
-| Layer | Technology | Version | Purpose & Architectural Decision |
+| Layer | Technology | Version | Why It Is Used |
 | :--- | :--- | :--- | :--- |
-| **Framework** | [![Next.js](https://img.shields.io/badge/Next.js-16.3-black?style=flat-square&logo=next.js)](https://nextjs.org/) | `16.3.6` | App Router for file-based dynamic routing (`/workout/[id]`), asset optimization, and production bundling. |
-| **UI Library** | [![React](https://img.shields.io/badge/React-19.2-20232A?style=flat-square&logo=react)](https://react.dev/) | `19.2.8` | Concurrent rendering, modern hooks (`useMemo`, `useCallback`, `useContext`), and hydration safety. |
-| **Language** | [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) | `5.x` | Strict type definitions across workout entities, metric calculations, and component props. |
-| **Styling** | [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/) | `v4.0` | Next-generation CSS engine, dark industrial palette, utility-first layout responsiveness, and modern container queries. |
-| **Iconography** | [![Lucide](https://img.shields.io/badge/Lucide_React-1.16-F56565?style=flat-square)](https://lucide.dev/) | `^1.16` | Consistent, lightweight SVG iconography for gym equipment, metrics, and interactive controls. |
-| **Celebrations** | [![Confetti](https://img.shields.io/badge/Canvas_Confetti-1.9-805AD5?style=flat-square)](https://www.npmjs.com/package/canvas-confetti) | `^1.9.4` | Micro-interaction celebration triggered upon workout set completion. |
-| **Typography** | [![Google Fonts](https://img.shields.io/badge/Google_Fonts-Oswald_%26_Inter-4285F4?style=flat-square)](https://fonts.google.com/) | `next/font` | **Oswald** (bold, high-impact display titles) paired with **Inter** (crisp, high-legibility body type). |
-| **Hosting & CI/CD** | [![Netlify](https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://www.netlify.com/) | Production | Automated continuous deployment pipeline with Next.js runtime plugin via `netlify.toml`. |
+| **Framework** | Next.js | `16.3.6` | App Router for dynamic routing (`/workout/[id]`), layouts, and static optimization. |
+| **UI Library** | React | `19.2.8` | Concurrent rendering, modern hooks (`useMemo`, `useCallback`, `useContext`), and hydration. |
+| **Language** | TypeScript | `5.x` | Static typing for workout entities, context payloads, and component props. |
+| **Styling** | Tailwind CSS | `v4.0` | Utility-first CSS via `@tailwindcss/postcss` for dark theme tokens and responsive layouts. |
+| **Utilities** | clsx & tailwind-merge | `2.1.1` / `3.0.2` | Conditional class name construction and conflicting utility resolution. |
+| **Icons** | Lucide React | `1.16.0` | Lightweight SVG icons for equipment, metrics, and navigation controls. |
+| **Interactions** | canvas-confetti | `1.9.4` | Particle celebration triggered when marking exercises completed. |
+| **Typography** | Google Fonts via `next/font` | Built-in | Oswald for condensed uppercase headings and Inter for interface legibility. |
+| **Deployment** | Netlify | Production | Continuous deployment linked to GitHub with Next.js plugin support via `netlify.toml`. |
 
 ---
 
 ## 📂 Project Structure
 
 ```plaintext
-FitLog/
+B14-A6-Fit-Log/
 ├── public/
-│   ├── assets/
-│   │   ├── banner.png                     # 3D gym equipment hero illustration
-│   │   ├── logo.png                       # Brand logo asset
-│   │   ├── demo.gif                       # Interactive product walkthrough animation
-│   │   ├── feature-sorting.gif            # Dynamic sorting engine animation
-│   │   ├── feature-details.gif            # Workout details and add to plan animation
-│   │   ├── feature-celebration.gif        # Mark as done and confetti celebration animation
-│   │   ├── fitlog-animated-preview.svg    # Live telemetry dashboard vector graphic
-│   │   ├── fitlog-animated-workflow.svg   # 4-step workout lifecycle diagram
-│   │   └── figma_overview_preview.png     # Multi-device responsive design preview
-│   └── favicon.ico                        # Application favicon
+│   └── assets/                     # Static images (banner, logo)
 ├── src/
 │   ├── app/
-│   │   ├── layout.tsx                     # Root HTML shell, fonts & global providers
-│   │   ├── page.tsx                       # Home page (Hero + Library Section)
-│   │   ├── not-found.tsx                  # Custom 404 error page ("Lost in the Gym")
+│   │   ├── layout.tsx              # Root HTML shell, fonts, and global context providers
+│   │   ├── page.tsx                # Home page composing Hero and LibrarySection
+│   │   ├── not-found.tsx           # Custom 404 page for unmatched routes
 │   │   ├── my-plan/
-│   │   │   └── page.tsx                   # My Plan page (Live metrics & dual tabs)
+│   │   │   └── page.tsx            # Daily workbench with telemetry cards and dual tabs
 │   │   └── workout/
 │   │       └── [id]/
-│   │           └── page.tsx               # Dynamic workout detail view (2-column layout)
+│   │           └── page.tsx        # Dynamic route for 2-column workout detail view
 │   ├── components/
-│   │   ├── Navbar.tsx                     # Sticky header with live plan/saved badges
-│   │   ├── Hero.tsx                       # Hero banner with Oswald typography & CTA
-│   │   ├── LibrarySection.tsx             # 3x4 workout grid, search, and dynamic sorting
-│   │   ├── WorkoutCard.tsx                # Exercise card with category tags & stats row
-│   │   ├── EmptyState.tsx                 # Reusable zero-data state component
-│   │   └── Footer.tsx                     # Dark-themed brand copyright footer
+│   │   ├── Navbar.tsx              # Sticky header with active route styling and live badges
+│   │   ├── Hero.tsx                # Home page banner with CTA anchor and equipment graphic
+│   │   ├── LibrarySection.tsx      # Responsive 3x4 workout grid with sorting dropdown
+│   │   ├── WorkoutCard.tsx         # Workout card displaying category tags, specs, and link
+│   │   ├── EmptyState.tsx          # Reusable placeholder with CTA for empty lists
+│   │   └── Footer.tsx              # Brand copyright footer
 │   ├── context/
-│   │   ├── PlanContext.tsx                # Workout state, localStorage sync & metrics
-│   │   └── ToastContext.tsx               # Floating notification system
+│   │   ├── PlanContext.tsx         # State management for plans, metrics, and localStorage
+│   │   └── ToastContext.tsx        # Toast alert notification provider and hook
 │   ├── data/
-│   │   └── fallbackWorkouts.ts            # Offline resilient dataset & API constants
+│   │   └── fallbackWorkouts.ts     # Offline resilient workout dataset and API constants
 │   └── types/
-│       └── workout.ts                     # TypeScript interfaces (Workout, SortOption)
+│       └── workout.ts              # TypeScript interfaces for Workout and SortOption
 ├── UI/
-│   ├── Fit Log.fig                        # Figma design system file
-│   └── Fit Log.penpot                     # Penpot cross-platform design file
-├── README.md                              # Repository documentation
-├── netlify.toml                           # Netlify production build configuration
-├── package.json                           # Dependencies & execution scripts
-└── tsconfig.json                          # Strict TypeScript compiler options
+│   ├── Fit Log.fig                 # Source Figma design file
+│   └── Fit Log.penpot              # Cross-platform Penpot design file
+├── assets/                         # Repository media (walkthrough GIF, visual assets)
+├── netlify.toml                    # Netlify deployment configuration
+├── package.json                    # Project dependencies and npm scripts
+├── postcss.config.mjs              # PostCSS configuration for Tailwind CSS v4
+├── tsconfig.json                   # TypeScript compiler options
+└── next.config.ts                  # Next.js configuration
 ```
 
 ---
 
-## 📡 API Specifications & Resilience
+## 📡 API Reference
 
-FitLog connects to the Cloudflare Worker API:
+The application interfaces with two endpoints provided by a Cloudflare Worker service:
 
-### Endpoints
-* **All Workouts:** `GET https://api.abcz.workers.dev/api/fitlog`
-* **Single Workout Details:** `GET https://api.abcz.workers.dev/api/fitlog/:id`
+- `GET https://api.abcz.workers.dev/api/fitlog` — Retrieves all 12 exercises.
+- `GET https://api.abcz.workers.dev/api/fitlog/:id` — Retrieves a single workout by numeric ID.
 
-### Sample Workout Schema
+### Sample Response Object
 ```json
 {
   "id": 1,
   "name": "Barbell Bench Press",
-  "image": "https://images.unsplash.com/photo-...",
+  "image": "https://img.magnific.com/free-photo/portrait-anime-character-doing-fitness-exercising_23-2151666664.jpg?w=740",
   "muscleGroups": ["Chest", "Arms"],
   "equipment": "Barbell, Bench",
   "difficulty": "Intermediate",
@@ -317,7 +218,7 @@ FitLog connects to the Cloudflare Worker API:
   "sets": 4,
   "reps": "6-8",
   "rating": 4.8,
-  "description": "A compound press that builds chest thickness, triceps, and pressing power.",
+  "description": "A compound press that builds chest thickness, triceps, and pressing power from a stable bench.",
   "instructions": [
     "Lie on the bench with eyes under the bar and feet planted.",
     "Unrack with locked elbows and lower the bar to mid-chest.",
@@ -327,89 +228,87 @@ FitLog connects to the Cloudflare Worker API:
 }
 ```
 
-### High-Availability Fallback Design
-To guarantee that users never encounter broken views due to network blips or external worker latency:
-1. Every fetch request issues a fresh `GET` request with `{ cache: "no-store" }`.
-2. If the request encounters a non-200 status or throws a network error, FitLog gracefully hydrates from [`fallbackWorkouts.ts`](src/data/fallbackWorkouts.ts).
-3. The user interface continues operating smoothly with zero disruption.
+### Fallback Behavior
+1. Every client fetch request is executed with `{ cache: "no-store" }` to request fresh data.
+2. If the request fails due to network disruption or returns a non-200 HTTP status, the catch handler intercepts the error.
+3. The component hydrates from `fallbackWorkouts.ts` and logs a warning to the browser console, preventing blank screens or unhandled runtime exceptions.
 
 ---
 
 ## 🎨 Design System
 
-<div align="center">
-
-| Swatch | Token | Hex Code | Visual Application |
-| :---: | :--- | :--- | :--- |
-| 🟩 | **Electric Lime** | `#ccff00` | Primary CTA buttons, active tab indicators, confetti particles, key metric highlights |
-| ⬛ | **Obsidian Dark** | `#090a0d` | Main page background, high-contrast button labels |
-| ⬛ | **Dark Graphite** | `#12141a` | Card surfaces, metric dashboard panels, input controls |
-| 🟦 | **Electric Sky** | `#38bdf8` | Training duration indicators and minute progress gauges |
-| 🟧 | **Molten Flame** | `#fb923c` | Caloric burn metrics, energy indicators |
-| 🟩 | **Emerald Check** | `#22c55e` | Completed sets, checkmarks, done badges |
-| 🔘 | **Graphite Border** | `#1f232b` | Card dividers, panel outlines, structural borders |
-
-</div>
+| Token | Hex Value | Application |
+| :--- | :--- | :--- |
+| **Accent Lime** | `#ccff00` | Primary buttons, active tabs, progress bars, completed badges |
+| **Obsidian Dark** | `#090a0d` | Page background, high-contrast text |
+| **Dark Graphite** | `#12141a` | Card surfaces, metric dashboard containers |
+| **Elevated Surface** | `#181c25` | Secondary action buttons, icon wrappers, hover backgrounds |
+| **Graphite Border** | `#1f232b` | Structural dividers, card borders, table rules |
+| **Text Primary** | `#ffffff` | Headings, active values, primary labels |
+| **Text Muted** | `#9ca3af` | Subtitles, descriptions, secondary specifications |
 
 ### Typography
-* **Display Font:** `Oswald` (Google Font) — Bold, condensed, uppercase lettering for headlines and hero titles.
-* **Interface Font:** `Inter` (Google Font) — Clean, legible modern sans-serif for specifications, instructions, and metrics.
+- **Display Font:** `Oswald` (Google Font via `next/font/google`) — Display headings, hero title, and button labels.
+- **Interface Font:** `Inter` (Google Font via `next/font/google`) — Body text, instructions, specifications, and data tables.
 
 ---
 
 ## 🚀 Getting Started
 
-Follow these steps to run FitLog locally on your machine.
-
 ### Prerequisites
-* **Node.js:** `v18.17.0` or higher (Node 20+ recommended)
-* **Package Manager:** `npm` (v9+), `pnpm`, or `yarn`
-* **Git:** Installed and configured
+- **Node.js:** `v18.17.0` or higher (Node 20+ recommended)
+- **Package Manager:** `npm` (included with Node), `pnpm`, or `yarn`
+- **Git:** Installed on your local machine
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/mahfuzhasan2700/Assignment-6.git fitlog
-cd fitlog
+git clone https://github.com/mahfuzhasan2700/Assignment-6.git
 ```
 
-> [!TIP]
-> If you cloned into a folder containing `B14-A6-Fit-Log`, enter the application directory:
-> ```bash
-> cd B14-A6-Fit-Log
-> ```
+### 2. Navigate to Directory
+```bash
+cd Assignment-6/B14-A6-Fit-Log
+```
 
-### 2. Install Dependencies
+### 3. Install Dependencies
 ```bash
 npm install
 ```
 
-### 3. Run the Development Server
+### 4. Run the Development Server
 ```bash
 npm run dev
 ```
 
-Open your browser and navigate to **[http://localhost:3000](http://localhost:3000)**.
+Open [http://localhost:3000](http://localhost:3000) in your browser to inspect the application.
 
-### 4. Production Build & Linting
-Verify the production bundle locally:
+### 5. Production Build and Verification
 ```bash
-# Run ESLint validation
 npm run lint
+```
 
-# Build the production application
+```bash
 npm run build
+```
 
-# Start the production server
+```bash
 npm start
 ```
 
 ---
 
-## 📄 License & Credits
+## 📱 Responsive Behavior
 
-* **Project:** FitLog — Workout Library & Daily Training Log
-* **Author:** Mahfuz Hasan ([@mahfuzhasan2700](https://github.com/mahfuzhasan2700))
-* **License:** [MIT License](LICENSE)
+- **Mobile Viewports (< 640px):** Single-column stacked layouts for the hero section, exercise grid, and detail view. The navbar collapses into a slide-down mobile menu while retaining direct access to plan badges.
+- **Tablet Viewports (640px – 1024px):** Library grid reorganizes into 2 columns. The `/my-plan` telemetry cards display side-by-side with proportional padding.
+- **Desktop Viewports (> 1024px):** Fixed 3x4 exercise library grid, full two-column detail inspection view with sticky layout support, and full-width navigation header.
+
+---
+
+## 📄 Author and License
+
+- **Author:** Mahfuz Hasan ([@mahfuzhasan2700](https://github.com/mahfuzhasan2700))
+- **License:** MIT License. A `LICENSE` file should be added to the repository root.
 
 <br />
 
