@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 140" width="900" height="140" role="img" aria-label="The five lift daily cap filling slot by slot, then stamping done and resetting">
+  <title>FitLog 5-lift daily cap</title>
+  <defs>
+    <linearGradient id="slotFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ccff00"/>
+      <stop offset="100%" stop-color="#a8d400"/>
+    </linearGradient>
+    <style>
+      .cap   { font-family: Inter, "Segoe UI", Helvetica, sans-serif; font-size: 11px; letter-spacing: 2.5px; fill: #9ca3af; font-weight: 600; }
+      .slotT { font-family: Oswald, Impact, "Arial Narrow", sans-serif; font-size: 13px; font-weight: 700; fill: #ffffff; }
+      .slotN { font-family: Inter, "Segoe UI", Helvetica, sans-serif; font-size: 9.5px; fill: #9ca3af; }
+      .fillT { font-family: Oswald, Impact, "Arial Narrow", sans-serif; font-size: 13px; font-weight: 700; fill: #090a0d; }
+      .fillN { font-family: Inter, "Segoe UI", Helvetica, sans-serif; font-size: 9.5px; fill: #1a2000; font-weight: 600; }
+      .stamp { font-family: Oswald, Impact, "Arial Narrow", sans-serif; font-size: 22px; font-weight: 700; fill: #ccff00; letter-spacing: 2px; }
+
+      /* One shared 9s loop. Every element owns an explicit slice of it, so
+         nothing needs animation-delay and nothing appears out of order. */
+      @keyframes slot1 {
+        0%, 4.4%  { opacity: 0; transform: scale(0.82); }
+        9%, 88%   { opacity: 1; transform: scale(1); }
+        95%, 100% { opacity: 0; transform: scale(0.82); }
+      }
+      @keyframes slot2 {
+        0%, 17.8% { opacity: 0; transform: scale(0.82); }
+        22%, 88%  { opacity: 1; transform: scale(1); }
+        95%, 100% { opacity: 0; transform: scale(0.82); }
+      }
+      @keyframes slot3 {
+        0%, 31.1% { opacity: 0; transform: scale(0.82); }
+        36%, 88%  { opacity: 1; transform: scale(1); }
+        95%, 100% { opacity: 0; transform: scale(0.82); }
+      }
+      @keyframes slot4 {
+        0%, 44.4% { opacity: 0; transform: scale(0.82); }
+        49%, 88%  { opacity: 1; transform: scale(1); }
+        95%, 100% { opacity: 0; transform: scale(0.82); }
+      }
+      @keyframes slot5 {
+        0%, 57.8% { opacity: 0; transform: scale(0.82); }
+        62%, 88%  { opacity: 1; transform: scale(1); }
+        95%, 100% { opacity: 0; transform: scale(0.82); }
+      }
+      @keyframes stampIn {
+        0%, 64%   { opacity: 0; transform: scale(0.5) rotate(-12deg); }
+        70%       { opacity: 1; transform: scale(1.14) rotate(-8deg); }
+        74%, 88%  { opacity: 1; transform: scale(1) rotate(-8deg); }
+        94%, 100% { opacity: 0; transform: scale(1) rotate(-8deg); }
+      }
+      @keyframes barGrow {
+        0%,  4.4%    { transform: scaleX(0); }
+        9%,  17.8%   { transform: scaleX(0.2); }
+        22%, 31.1%   { transform: scaleX(0.4); }
+        36%, 44.4%   { transform: scaleX(0.6); }
+        49%, 57.8%   { transform: scaleX(0.8); }
+        62%, 88%     { transform: scaleX(1); }
+        95%, 100%    { transform: scaleX(0); }
+      }
+      @keyframes lockBlink {
+        0%, 57.8% { opacity: 0; }
+        62%, 88%  { opacity: 1; }
+        94%, 100% { opacity: 0; }
+      }
+
+      @keyframes count0 { 0%,  4.3%  { opacity: 1; } 4.4%, 100% { opacity: 0; } }
+      @keyframes count1 { 0%,  4.3%  { opacity: 0; } 4.4%, 17.7% { opacity: 1; } 17.8%, 100% { opacity: 0; } }
+      @keyframes count2 { 0%,  17.7% { opacity: 0; } 17.8%, 31% { opacity: 1; } 31.1%, 100% { opacity: 0; } }
+      @keyframes count3 { 0%,  31%   { opacity: 0; } 31.1%, 44.3% { opacity: 1; } 44.4%, 100% { opacity: 0; } }
+      @keyframes count4 { 0%,  44.3% { opacity: 0; } 44.4%, 57.7% { opacity: 1; } 57.8%, 100% { opacity: 0; } }
+      @keyframes count5 { 0%,  57.7% { opacity: 0; } 57.8%, 92%  { opacity: 1; } 92.1%, 100% { opacity: 0; } }
+
+      .s1 { transform-box: fill-box; transform-origin: center; animation: slot1 9s ease-out infinite; }
+      .s2 { transform-box: fill-box; transform-origin: center; animation: slot2 9s ease-out infinite; }
+      .s3 { transform-box: fill-box; transform-origin: center; animation: slot3 9s ease-out infinite; }
+      .s4 { transform-box: fill-box; transform-origin: center; animation: slot4 9s ease-out infinite; }
+      .s5 { transform-box: fill-box; transform-origin: center; animation: slot5 9s ease-out infinite; }
+
+      .bar  { transform-box: fill-box; transform-origin: left center; animation: barGrow 9s linear infinite; }
+      .lock { animation: lockBlink 9s ease-in-out infinite; }
+      .done { transform-box: fill-box; transform-origin: center; animation: stampIn 9s ease-out infinite; }
+
+      /* Hidden by default so a renderer that honours CSS never stacks
+         all six counter values on top of each other. */
+      .c0, .c1, .c2, .c3, .c4 { opacity: 0; }
+
+      .c0 { animation: count0 9s steps(1, end) infinite; }
+      .c1 { animation: count1 9s steps(1, end) infinite; }
+      .c2 { animation: count2 9s steps(1, end) infinite; }
+      .c3 { animation: count3 9s steps(1, end) infinite; }
+      .c4 { animation: count4 9s steps(1, end) infinite; }
+      .c5 { animation: count5 9s steps(1, end) infinite; }
+
+      @media (prefers-reduced-motion: reduce) {
+        /* Settle on the end state: five slots filled, cap reached, no motion. */
+        .s1,.s2,.s3,.s4,.s5,.bar,.lock { animation: none; opacity: 1; transform: none; }
+        .bar  { transform: scaleX(1); }
+        .done { animation: none; opacity: 0; }
+        .c0,.c1,.c2,.c3,.c4 { animation: none; opacity: 0; }
+        .c5 { animation: none; opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="140" rx="14" fill="#090a0d"/>
+
+  <g transform="translate(24, 26)">
+    <text class="cap" x="0" y="0">TODAY&#8217;S PLAN &#183; HARD CAP</text>
+    <g transform="translate(250, 2)">
+      <text class="slotT c0" x="0" y="0" fill="#ccff00">0 / 5</text>
+      <text class="slotT c1" x="0" y="0" fill="#ccff00">1 / 5</text>
+      <text class="slotT c2" x="0" y="0" fill="#ccff00">2 / 5</text>
+      <text class="slotT c3" x="0" y="0" fill="#ccff00">3 / 5</text>
+      <text class="slotT c4" x="0" y="0" fill="#ccff00">4 / 5</text>
+      <text class="slotT c5" x="0" y="0" fill="#ccff00">5 / 5</text>
+    </g>
+    <g class="lock" transform="translate(320, -9)">
+      <rect x="0" y="0" width="150" height="16" rx="8" fill="#2a1a0a" stroke="#f59e0b" stroke-width="1"/>
+      <text class="slotN" x="10" y="11" fill="#f59e0b">LIMIT REACHED</text>
+    </g>
+  </g>
+
+  <!-- slot rail -->
+  <g transform="translate(24, 44)">
+    <!-- empty slots -->
+    <g fill="#12141a" stroke="#1f232b" stroke-width="1.5">
+      <rect x="0"   y="0" width="162" height="52" rx="10"/>
+      <rect x="174" y="0" width="162" height="52" rx="10"/>
+      <rect x="348" y="0" width="162" height="52" rx="10"/>
+      <rect x="522" y="0" width="162" height="52" rx="10"/>
+      <rect x="696" y="0" width="156" height="52" rx="10"/>
+    </g>
+    <g class="slotN" fill="#4b5563">
+      <text x="68"  y="31">SLOT 1</text>
+      <text x="242" y="31">SLOT 2</text>
+      <text x="416" y="31">SLOT 3</text>
+      <text x="590" y="31">SLOT 4</text>
+      <text x="762" y="31">SLOT 5</text>
+    </g>
+
+    <!-- filled slots -->
+    <g class="s1">
+      <rect x="0" y="0" width="162" height="52" rx="10" fill="url(#slotFill)"/>
+      <text class="fillT" x="12" y="24">BENCH PRESS</text>
+      <text class="fillN" x="12" y="40">25 min &#183; 180 kcal</text>
+    </g>
+    <g class="s2">
+      <rect x="174" y="0" width="162" height="52" rx="10" fill="url(#slotFill)"/>
+      <text class="fillT" x="186" y="24">PULL-UP</text>
+      <text class="fillN" x="186" y="40">15 min &#183; 120 kcal</text>
+    </g>
+    <g class="s3">
+      <rect x="348" y="0" width="162" height="52" rx="10" fill="url(#slotFill)"/>
+      <text class="fillT" x="360" y="24">BACK SQUAT</text>
+      <text class="fillN" x="360" y="40">30 min &#183; 240 kcal</text>
+    </g>
+    <g class="s4">
+      <rect x="522" y="0" width="162" height="52" rx="10" fill="url(#slotFill)"/>
+      <text class="fillT" x="534" y="24">RUSSIAN TWIST</text>
+      <text class="fillN" x="534" y="40">12 min &#183; 90 kcal</text>
+    </g>
+    <g class="s5">
+      <rect x="696" y="0" width="156" height="52" rx="10" fill="url(#slotFill)"/>
+      <text class="fillT" x="708" y="24">PLANK</text>
+      <text class="fillN" x="708" y="40">10 min &#183; 70 kcal</text>
+    </g>
+
+    <!-- done stamp -->
+    <g class="done" transform="translate(700, -2)">
+      <rect x="0" y="0" width="152" height="56" rx="10" fill="#090a0d" opacity="0.88"/>
+      <rect x="0" y="0" width="152" height="56" rx="10" fill="none" stroke="#ccff00" stroke-width="2.5"/>
+      <g stroke="#ccff00" stroke-width="3" fill="none" stroke-linecap="round" transform="translate(18, 22)">
+        <path d="M0 4 l6 6 l12 -13"/>
+      </g>
+      <text class="stamp" x="52" y="35">DONE</text>
+    </g>
+  </g>
+
+  <!-- progress bar -->
+  <g transform="translate(24, 110)">
+    <rect x="0" y="0" width="852" height="8" rx="4" fill="#1f232b"/>
+    <rect class="bar" x="0" y="0" width="852" height="8" rx="4" fill="url(#slotFill)"/>
+  </g>
+</svg>

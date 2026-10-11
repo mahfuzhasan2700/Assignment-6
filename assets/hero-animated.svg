@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="1000" height="320" role="img" aria-label="FitLog animated hero: Train with intent, log every set">
+  <title>FitLog — Train With Intent. Log Every Set.</title>
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="55%" stop-color="#12141a"/>
+      <stop offset="100%" stop-color="#090a0d"/>
+    </linearGradient>
+    <radialGradient id="limeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ccff00" stop-opacity="0.55"/>
+      <stop offset="65%" stop-color="#ccff00" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ccff00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ringStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ccff00" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#ccff00" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ccff00" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sweepLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ccff00" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ccff00" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ccff00" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="heroClip"><rect x="0" y="0" width="1000" height="320" rx="18"/></clipPath>
+    <style>
+      .t { font-family: Oswald, Impact, "Arial Narrow", sans-serif; fill: #ffffff; }
+      .b { font-family: Inter, "Segoe UI", Helvetica, sans-serif; }
+
+      @keyframes riseIn {
+        0%, 6%   { opacity: 0; transform: translateY(18px); }
+        18%, 86% { opacity: 1; transform: translateY(0); }
+        100%     { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes spinRing { to { transform: rotate(360deg); } }
+      @keyframes spinRingRev { to { transform: rotate(-360deg); } }
+      @keyframes breathe {
+        0%, 100% { opacity: 0.35; transform: scale(0.92); }
+        50%      { opacity: 0.95; transform: scale(1.06); }
+      }
+      @keyframes floatY {
+        0%, 100% { transform: translateY(0); }
+        50%      { transform: translateY(-10px); }
+      }
+      @keyframes drift {
+        0%   { opacity: 0; transform: translate(0, 0); }
+        15%  { opacity: 0.9; }
+        85%  { opacity: 0.25; }
+        100% { opacity: 0; transform: translate(26px, -58px); }
+      }
+      @keyframes sweep {
+        0%   { transform: translateX(-420px); }
+        100% { transform: translateX(1000px); }
+      }
+      @keyframes barPump {
+        0%, 100% { transform: scaleX(0.35); }
+        50%      { transform: scaleX(1); }
+      }
+      @keyframes blink {
+        0%, 45%  { opacity: 1; }
+        50%, 95% { opacity: 0.15; }
+        100%     { opacity: 1; }
+      }
+
+      .line1 { animation: riseIn 5s ease-out 0s    infinite backwards; }
+      .line2 { animation: riseIn 5s ease-out 0.45s infinite backwards; }
+      .line3 { animation: riseIn 5s ease-out 0.9s  infinite backwards; }
+      .chips { animation: riseIn 5s ease-out 1.3s  infinite backwards; }
+
+      .glow      { transform-box: view-box; transform-origin: 806px 160px; animation: breathe 4s ease-in-out infinite; }
+      .ringA     { transform-box: view-box; transform-origin: 806px 160px; animation: spinRing 9s linear infinite; }
+      .ringB     { transform-box: view-box; transform-origin: 806px 160px; animation: spinRingRev 14s linear infinite; }
+      .bell      { transform-box: view-box; transform-origin: 806px 160px; animation: floatY 3.4s ease-in-out infinite; }
+      .sweepbar  { animation: sweep 4.2s linear infinite; }
+      .cursor    { animation: blink 1.1s steps(1, end) infinite; }
+
+      .p1 { animation: drift 5.5s linear 0s   infinite backwards; }
+      .p2 { animation: drift 6.8s linear 1.1s infinite backwards; }
+      .p3 { animation: drift 7.6s linear 2.2s infinite backwards; }
+      .p4 { animation: drift 6.2s linear 3.1s infinite backwards; }
+      .p5 { animation: drift 8.1s linear 0.6s infinite backwards; }
+      .p6 { animation: drift 7s   linear 4s   infinite backwards; }
+
+      .pump1 { transform-box: fill-box; transform-origin: left center; animation: barPump 2.6s ease-in-out 0s    infinite backwards; }
+      .pump2 { transform-box: fill-box; transform-origin: left center; animation: barPump 2.6s ease-in-out 0.45s infinite backwards; }
+      .pump3 { transform-box: fill-box; transform-origin: left center; animation: barPump 2.6s ease-in-out 0.9s  infinite backwards; }
+
+      @media (prefers-reduced-motion: reduce) {
+        .line1, .line2, .line3, .chips, .glow, .ringA, .ringB, .bell,
+        .sweepbar, .cursor, .p1, .p2, .p3, .p4, .p5, .p6,
+        .pump1, .pump2, .pump3 { animation: none; opacity: 1; transform: none; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#heroClip)">
+    <rect width="1000" height="320" fill="url(#heroBg)"/>
+    <rect width="1000" height="320" fill="none" stroke="#1f232b" stroke-width="2" rx="18"/>
+
+    <g stroke="#1f232b" stroke-width="1" opacity="0.5">
+      <path d="M0 80 H1000 M0 160 H1000 M0 240 H1000"/>
+      <path d="M200 0 V320 M400 0 V320 M600 0 V320 M800 0 V320"/>
+    </g>
+
+    <g fill="#ccff00">
+      <circle class="p1" cx="140" cy="286" r="2.5"/>
+      <circle class="p2" cx="330" cy="300" r="2"/>
+      <circle class="p3" cx="520" cy="292" r="2.8"/>
+      <circle class="p4" cx="690" cy="304" r="2"/>
+      <circle class="p5" cx="880" cy="288" r="2.4"/>
+      <circle class="p6" cx="240" cy="310" r="1.8"/>
+    </g>
+
+    <g class="glow"><circle cx="806" cy="160" r="128" fill="url(#limeGlow)"/></g>
+
+    <g class="ringA" fill="none" stroke="url(#ringStroke)" stroke-width="3" stroke-linecap="round">
+      <circle cx="806" cy="160" r="112" stroke-dasharray="150 410"/>
+    </g>
+    <g class="ringB" fill="none" stroke="#ccff00" stroke-width="1.5" opacity="0.4">
+      <circle cx="806" cy="160" r="92" stroke-dasharray="6 16"/>
+    </g>
+
+    <g class="bell" stroke="#ccff00" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M752 160 H860"/>
+      <path d="M742 132 V188 M726 142 V178"/>
+      <path d="M870 132 V188 M886 142 V178"/>
+    </g>
+
+    <g transform="translate(64, 104)">
+      <text class="b line1" x="0" y="0" font-size="15" letter-spacing="7" font-weight="600" fill="#ccff00">WORKOUT LIBRARY</text>
+      <text class="t line2" x="0" y="54" font-size="46" font-weight="700" letter-spacing="1.5">TRAIN WITH INTENT.</text>
+      <g class="line3">
+        <text class="t" x="0" y="106" font-size="46" font-weight="700" letter-spacing="1.5">LOG EVERY SET.</text>
+        <rect class="cursor" x="372" y="74" width="5" height="38" fill="#ccff00"/>
+      </g>
+      <text class="b chips" x="0" y="142" font-size="13.5" fill="#9ca3af">12 lifts · 5-lift daily cap · live minutes &amp; calories</text>
+
+      <g class="chips" transform="translate(0, 168)">
+        <g>
+          <rect x="0" y="0" width="150" height="8" rx="4" fill="#1f232b"/>
+          <rect class="pump1" x="0" y="0" width="150" height="8" rx="4" fill="#ccff00" opacity="0.9"/>
+        </g>
+        <g transform="translate(170, 0)">
+          <rect x="0" y="0" width="150" height="8" rx="4" fill="#1f232b"/>
+          <rect class="pump2" x="0" y="0" width="150" height="8" rx="4" fill="#ccff00" opacity="0.65"/>
+        </g>
+        <g transform="translate(340, 0)">
+          <rect x="0" y="0" width="150" height="8" rx="4" fill="#1f232b"/>
+          <rect class="pump3" x="0" y="0" width="150" height="8" rx="4" fill="#ccff00" opacity="0.45"/>
+        </g>
+      </g>
+    </g>
+
+    <g class="sweepbar"><rect x="0" y="316" width="420" height="4" fill="url(#sweepLine)"/></g>
+  </g>
+</svg>

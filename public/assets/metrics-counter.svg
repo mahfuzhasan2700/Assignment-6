@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200" role="img" aria-label="Live training metrics: exercises, minutes and calories counting up">
+  <title>FitLog live metrics — Exercises, Minutes, Calories</title>
+  <defs>
+    <linearGradient id="mCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#181c25"/>
+      <stop offset="100%" stop-color="#12141a"/>
+    </linearGradient>
+    <linearGradient id="mFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ccff00" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ccff00"/>
+    </linearGradient>
+    <style>
+      .lbl { font-family: Inter, "Segoe UI", Helvetica, sans-serif; font-size: 12px; letter-spacing: 3px; fill: #9ca3af; font-weight: 600; }
+      .val { font-family: Oswald, Impact, "Arial Narrow", sans-serif; font-size: 50px; font-weight: 700; fill: #ffffff; }
+      .unit{ font-family: Inter, "Segoe UI", Helvetica, sans-serif; font-size: 12px; fill: #9ca3af; }
+      /* Each tick owns an explicit slice of one shared 4s loop, so no
+         animation-delay is needed and nothing flashes before its turn. */
+      .tick { opacity: 0; }
+
+      @keyframes tick0 { 0%,  13.9% { opacity: 1; } 14%,  100% { opacity: 0; } }
+      @keyframes tick1 { 0%,  13.9% { opacity: 0; } 14%, 27.9% { opacity: 1; } 28%, 100% { opacity: 0; } }
+      @keyframes tick2 { 0%,  27.9% { opacity: 0; } 28%, 41.9% { opacity: 1; } 42%, 100% { opacity: 0; } }
+      @keyframes tick3 { 0%,  41.9% { opacity: 0; } 42%, 55.9% { opacity: 1; } 56%, 100% { opacity: 0; } }
+      @keyframes tick4 { 0%,  55.9% { opacity: 0; } 56%, 69.9% { opacity: 1; } 70%, 100% { opacity: 0; } }
+      @keyframes tick5 { 0%,  69.9% { opacity: 0; } 70%,  100% { opacity: 1; } }
+
+      @keyframes fill {
+        0%,  13.9%   { transform: scaleX(0); }
+        14%, 27.9%   { transform: scaleX(0.2); }
+        28%, 41.9%   { transform: scaleX(0.4); }
+        42%, 55.9%   { transform: scaleX(0.6); }
+        56%, 69.9%   { transform: scaleX(0.8); }
+        70%, 100%    { transform: scaleX(1); }
+      }
+      @keyframes cardLift {
+        0%, 100% { stroke: #1f232b; }
+        50%      { stroke: #2b323e; }
+      }
+      @keyframes dotPulse {
+        0%, 100% { opacity: 0.25; transform: scale(0.85); }
+        50%      { opacity: 1;    transform: scale(1.25); }
+      }
+
+      .t0 { animation: tick0 4s steps(1, end) infinite; }
+      .t1 { animation: tick1 4s steps(1, end) infinite; }
+      .t2 { animation: tick2 4s steps(1, end) infinite; }
+      .t3 { animation: tick3 4s steps(1, end) infinite; }
+      .t4 { animation: tick4 4s steps(1, end) infinite; }
+      .t5 { animation: tick5 4s steps(1, end) infinite; }
+
+      .bar1, .bar2, .bar3 {
+        transform-box: fill-box; transform-origin: left center;
+        animation: fill 4s cubic-bezier(.2,.7,.3,1) infinite;
+      }
+
+      .cardA { animation: cardLift 4s ease-in-out 0s   infinite backwards; }
+      .cardB { animation: cardLift 4s ease-in-out 1.3s infinite backwards; }
+      .cardC { animation: cardLift 4s ease-in-out 2.6s infinite backwards; }
+
+      .liveDot { transform-box: fill-box; transform-origin: center; animation: dotPulse 1.6s ease-in-out infinite; }
+
+      @media (prefers-reduced-motion: reduce) {
+        .t0, .t1, .t2, .t3, .t4, .cardA, .cardB, .cardC, .liveDot { animation: none; opacity: 0; }
+        .t5 { animation: none; opacity: 1; }
+        .bar1, .bar2, .bar3 { animation: none; transform: scaleX(1); }
+        .liveDot { opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="200" rx="14" fill="#090a0d"/>
+
+  <g transform="translate(24, 16)">
+    <circle class="liveDot" cx="6" cy="6" r="3.4" fill="#ccff00"/>
+    <text class="lbl" x="20" y="10">LIVE SESSION TELEMETRY</text>
+  </g>
+
+  <!-- Exercises -->
+  <g transform="translate(24, 44)">
+    <rect class="cardA" width="276" height="140" rx="12" fill="url(#mCard)" stroke="#1f232b" stroke-width="1.5"/>
+    <text class="lbl" x="22" y="34">EXERCISES</text>
+    <g transform="translate(22, 92)">
+      <text class="val tick t0" x="0" y="0">0</text>
+      <text class="val tick t1" x="0" y="0">1</text>
+      <text class="val tick t2" x="0" y="0">2</text>
+      <text class="val tick t3" x="0" y="0">3</text>
+      <text class="val tick t4" x="0" y="0">4</text>
+      <text class="val tick t5" x="0" y="0">5</text>
+      <text class="unit" x="74" y="-4">/ 5 cap</text>
+    </g>
+    <rect x="22" y="110" width="232" height="7" rx="3.5" fill="#1f232b"/>
+    <rect class="bar1" x="22" y="110" width="232" height="7" rx="3.5" fill="url(#mFill)"/>
+  </g>
+
+  <!-- Minutes -->
+  <g transform="translate(312, 44)">
+    <rect class="cardB" width="276" height="140" rx="12" fill="url(#mCard)" stroke="#1f232b" stroke-width="1.5"/>
+    <text class="lbl" x="22" y="34">MINUTES</text>
+    <g transform="translate(22, 92)">
+      <text class="val tick t0" x="0" y="0">0</text>
+      <text class="val tick t1" x="0" y="0">25</text>
+      <text class="val tick t2" x="0" y="0">45</text>
+      <text class="val tick t3" x="0" y="0">70</text>
+      <text class="val tick t4" x="0" y="0">95</text>
+      <text class="val tick t5" x="0" y="0">110</text>
+      <text class="unit" x="104" y="-4">min</text>
+    </g>
+    <rect x="22" y="110" width="232" height="7" rx="3.5" fill="#1f232b"/>
+    <rect class="bar2" x="22" y="110" width="232" height="7" rx="3.5" fill="url(#mFill)"/>
+  </g>
+
+  <!-- Calories -->
+  <g transform="translate(600, 44)">
+    <rect class="cardC" width="276" height="140" rx="12" fill="url(#mCard)" stroke="#1f232b" stroke-width="1.5"/>
+    <text class="lbl" x="22" y="34">CALORIES</text>
+    <g transform="translate(22, 92)">
+      <text class="val tick t0" x="0" y="0">0</text>
+      <text class="val tick t1" x="0" y="0">180</text>
+      <text class="val tick t2" x="0" y="0">320</text>
+      <text class="val tick t3" x="0" y="0">460</text>
+      <text class="val tick t4" x="0" y="0">620</text>
+      <text class="val tick t5" x="0" y="0">760</text>
+      <text class="unit" x="118" y="-4">kcal</text>
+    </g>
+    <rect x="22" y="110" width="232" height="7" rx="3.5" fill="#1f232b"/>
+    <rect class="bar3" x="22" y="110" width="232" height="7" rx="3.5" fill="url(#mFill)"/>
+  </g>
+</svg>

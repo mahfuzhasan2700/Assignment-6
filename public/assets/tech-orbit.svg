@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="1000" height="380" role="img" aria-label="FitLog technology stack orbiting a core: Next.js, React, TypeScript, Tailwind CSS, Lucide and Netlify">
+  <title>FitLog technology stack</title>
+  <defs>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ccff00" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#ccff00" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ccff00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="nodeFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#181c25"/>
+      <stop offset="100%" stop-color="#12141a"/>
+    </linearGradient>
+    <style>
+      .cap  { font-family: Inter, "Segoe UI", Helvetica, sans-serif; font-size: 11px; letter-spacing: 2.5px; fill: #9ca3af; font-weight: 600; }
+      .core { font-family: Oswald, Impact, "Arial Narrow", sans-serif; font-size: 20px; font-weight: 700; fill: #ccff00; letter-spacing: 1px; }
+      .nd   { font-family: Inter, "Segoe UI", Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #ffffff; }
+      .ver  { font-family: Inter, "Segoe UI", Helvetica, sans-serif; font-size: 9px; fill: #9ca3af; }
+      .lg   { font-family: Inter, "Segoe UI", Helvetica, sans-serif; font-size: 12.5px; fill: #ffffff; }
+      .lgv  { font-family: Inter, "Segoe UI", Helvetica, sans-serif; font-size: 11.5px; fill: #ccff00; font-weight: 600; }
+      .lgd  { font-family: Inter, "Segoe UI", Helvetica, sans-serif; font-size: 10.5px; fill: #9ca3af; }
+
+      @keyframes spin    { from { transform: rotate(0deg); }   to { transform: rotate(360deg); } }
+      @keyframes spinRev { from { transform: rotate(0deg); }   to { transform: rotate(-360deg); } }
+      @keyframes corePulse {
+        0%, 100% { opacity: 0.4; transform: scale(0.94); }
+        50%      { opacity: 1;   transform: scale(1.08); }
+      }
+      @keyframes ringFade {
+        0%, 100% { opacity: 0.22; }
+        50%      { opacity: 0.6; }
+      }
+      @keyframes rowIn {
+        0%, 10%  { opacity: 0; transform: translateX(14px); }
+        24%, 90% { opacity: 1; transform: translateX(0); }
+        100%     { opacity: 1; transform: translateX(0); }
+      }
+
+      .orbitOuter { transform-box: view-box; transform-origin: 350px 190px; animation: spin 26s linear infinite; }
+      .orbitInner { transform-box: view-box; transform-origin: 350px 190px; animation: spinRev 19s linear infinite; }
+
+      .cA { transform-box: view-box; transform-origin: 500px 190px; animation: spinRev 26s linear infinite; }
+      .cB { transform-box: view-box; transform-origin: 275px 320px; animation: spinRev 26s linear infinite; }
+      .cC { transform-box: view-box; transform-origin: 275px 60px;  animation: spinRev 26s linear infinite; }
+      .cD { transform-box: view-box; transform-origin: 396px 270px; animation: spin 19s linear infinite; }
+      .cE { transform-box: view-box; transform-origin: 258px 190px; animation: spin 19s linear infinite; }
+      .cF { transform-box: view-box; transform-origin: 396px 110px; animation: spin 19s linear infinite; }
+
+      .glow  { transform-box: view-box; transform-origin: 350px 190px; animation: corePulse 3.6s ease-in-out infinite; }
+      .ring1 { animation: ringFade 4s ease-in-out 0s infinite backwards; }
+      .ring2 { animation: ringFade 4s ease-in-out 2s infinite backwards; }
+
+      .r1 { animation: rowIn 7s ease-out 0s   infinite backwards; }
+      .r2 { animation: rowIn 7s ease-out 0.3s infinite backwards; }
+      .r3 { animation: rowIn 7s ease-out 0.6s infinite backwards; }
+      .r4 { animation: rowIn 7s ease-out 0.9s infinite backwards; }
+      .r5 { animation: rowIn 7s ease-out 1.2s infinite backwards; }
+      .r6 { animation: rowIn 7s ease-out 1.5s infinite backwards; }
+
+      @media (prefers-reduced-motion: reduce) {
+        .orbitOuter, .orbitInner, .cA, .cB, .cC, .cD, .cE, .cF, .glow,
+        .ring1, .ring2, .r1, .r2, .r3, .r4, .r5, .r6 {
+          animation: none; opacity: 1; transform: none;
+        }
+      }
+    </style>
+  </defs>
+
+  <rect width="1000" height="380" rx="14" fill="#090a0d"/>
+  <text class="cap" x="24" y="30">ENGINEERED WITH</text>
+
+  <!-- orbit rings -->
+  <circle class="ring1" cx="350" cy="190" r="150" fill="none" stroke="#ccff00" stroke-width="1" stroke-dasharray="4 8"/>
+  <circle class="ring2" cx="350" cy="190" r="92"  fill="none" stroke="#ccff00" stroke-width="1" stroke-dasharray="4 8"/>
+
+  <!-- core -->
+  <g class="glow"><circle cx="350" cy="190" r="74" fill="url(#coreGlow)"/></g>
+  <circle cx="350" cy="190" r="46" fill="#12141a" stroke="#ccff00" stroke-width="2"/>
+  <g stroke="#ccff00" stroke-width="4" stroke-linecap="round" fill="none" transform="translate(350, 174)">
+    <path d="M-17 0 H17"/>
+    <path d="M-21 -8 V8 M-27 -4 V4"/>
+    <path d="M21 -8 V8 M27 -4 V4"/>
+  </g>
+  <text class="core" x="350" y="208" text-anchor="middle">FITLOG</text>
+
+  <!-- outer orbit: 3 nodes -->
+  <g class="orbitOuter">
+    <g class="cA">
+      <circle cx="500" cy="190" r="33" fill="url(#nodeFill)" stroke="#ccff00" stroke-width="1.8"/>
+      <text class="nd"  x="500" y="188" text-anchor="middle">Next.js</text>
+      <text class="ver" x="500" y="201" text-anchor="middle">16.3.6</text>
+    </g>
+    <g class="cB">
+      <circle cx="275" cy="320" r="33" fill="url(#nodeFill)" stroke="#ccff00" stroke-width="1.8"/>
+      <text class="nd"  x="275" y="318" text-anchor="middle">React</text>
+      <text class="ver" x="275" y="331" text-anchor="middle">19.2.8</text>
+    </g>
+    <g class="cC">
+      <circle cx="275" cy="60" r="33" fill="url(#nodeFill)" stroke="#ccff00" stroke-width="1.8"/>
+      <text class="nd"  x="275" y="58" text-anchor="middle">Tailwind</text>
+      <text class="ver" x="275" y="71" text-anchor="middle">v4</text>
+    </g>
+  </g>
+
+  <!-- inner orbit: 3 nodes -->
+  <g class="orbitInner">
+    <g class="cD">
+      <circle cx="396" cy="270" r="30" fill="url(#nodeFill)" stroke="#2b323e" stroke-width="1.8"/>
+      <text class="nd"  x="396" y="268" text-anchor="middle">TypeScript</text>
+      <text class="ver" x="396" y="280" text-anchor="middle">5.x</text>
+    </g>
+    <g class="cE">
+      <circle cx="258" cy="190" r="30" fill="url(#nodeFill)" stroke="#2b323e" stroke-width="1.8"/>
+      <text class="nd"  x="258" y="188" text-anchor="middle">Lucide</text>
+      <text class="ver" x="258" y="200" text-anchor="middle">icons</text>
+    </g>
+    <g class="cF">
+      <circle cx="396" cy="110" r="30" fill="url(#nodeFill)" stroke="#2b323e" stroke-width="1.8"/>
+      <text class="nd"  x="396" y="108" text-anchor="middle">Netlify</text>
+      <text class="ver" x="396" y="120" text-anchor="middle">deploy</text>
+    </g>
+  </g>
+
+  <!-- legend -->
+  <g transform="translate(620, 62)">
+    <rect x="0" y="-34" width="356" height="292" rx="12" fill="#12141a" stroke="#1f232b" stroke-width="1.5"/>
+    <g class="r1" transform="translate(20, 0)">
+      <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
+      <text class="lg"  x="14" y="0">Next.js App Router</text>
+      <text class="lgv" x="252" y="0">16.3.6</text>
+      <text class="lgd" x="14" y="15">File-based routing, /workout/[id]</text>
+    </g>
+    <g class="r2" transform="translate(20, 42)">
+      <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
+      <text class="lg"  x="14" y="0">React</text>
+      <text class="lgv" x="252" y="0">19.2.8</text>
+      <text class="lgd" x="14" y="15">Context state, useMemo selectors</text>
+    </g>
+    <g class="r3" transform="translate(20, 84)">
+      <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
+      <text class="lg"  x="14" y="0">TypeScript</text>
+      <text class="lgv" x="252" y="0">5.x</text>
+      <text class="lgd" x="14" y="15">Typed Workout + SortOption models</text>
+    </g>
+    <g class="r4" transform="translate(20, 126)">
+      <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
+      <text class="lg"  x="14" y="0">Tailwind CSS</text>
+      <text class="lgv" x="252" y="0">v4</text>
+      <text class="lgd" x="14" y="15">Dark industrial tokens, responsive</text>
+    </g>
+    <g class="r5" transform="translate(20, 168)">
+      <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
+      <text class="lg"  x="14" y="0">lucide-react</text>
+      <text class="lgv" x="252" y="0">^1.16</text>
+      <text class="lgd" x="14" y="15">SVG iconography across the UI</text>
+    </g>
+    <g class="r6" transform="translate(20, 210)">
+      <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
+      <text class="lg"  x="14" y="0">canvas-confetti</text>
+      <text class="lgv" x="252" y="0">^1.9.4</text>
+      <text class="lgd" x="14" y="15">Set-completion celebration burst</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260" role="img" aria-label="FitLog flow: browse the library, sort, add to today's plan, log it done">
+  <title>FitLog training flow — Browse, Sort, Add to Plan, Log Done</title>
+  <defs>
+    <linearGradient id="fCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#181c25"/>
+      <stop offset="100%" stop-color="#12141a"/>
+    </linearGradient>
+    <radialGradient id="pulseGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ccff00" stop-opacity="1"/>
+      <stop offset="45%" stop-color="#ccff00" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ccff00" stop-opacity="0"/>
+    </radialGradient>
+    <path id="flowPath" d="M196 130 H334 M446 130 H584 M696 130 H834"/>
+    <style>
+      .num   { font-family: Oswald, Impact, sans-serif; font-size: 13px; font-weight: 700; fill: #090a0d; }
+      .title { font-family: Oswald, Impact, "Arial Narrow", sans-serif; font-size: 19px; font-weight: 700; fill: #ffffff; letter-spacing: 0.6px; }
+      .desc  { font-family: Inter, "Segoe UI", Helvetica, sans-serif; font-size: 11.5px; fill: #9ca3af; }
+      .cap   { font-family: Inter, "Segoe UI", Helvetica, sans-serif; font-size: 11px; letter-spacing: 2.5px; fill: #9ca3af; font-weight: 600; }
+
+      @keyframes nodeOn {
+        0%, 8%    { stroke: #1f232b; }
+        12%, 28%  { stroke: #ccff00; }
+        36%, 100% { stroke: #1f232b; }
+      }
+      @keyframes badgeOn {
+        0%, 8%    { opacity: 0.35; transform: scale(1); }
+        14%, 26%  { opacity: 1; transform: scale(1.12); }
+        36%, 100% { opacity: 0.35; transform: scale(1); }
+      }
+      @keyframes haloOn {
+        0%, 8%    { opacity: 0; transform: scale(0.6); }
+        16%       { opacity: 0.55; transform: scale(1); }
+        34%, 100% { opacity: 0; transform: scale(1.3); }
+      }
+      @keyframes dash { to { stroke-dashoffset: -28; } }
+      @keyframes arrowBlink {
+        0%, 100% { opacity: 0.3; }
+        50%      { opacity: 1; }
+      }
+
+      .n1 { animation: nodeOn 6s ease-in-out 0s   infinite backwards; }
+      .n2 { animation: nodeOn 6s ease-in-out 1.5s infinite backwards; }
+      .n3 { animation: nodeOn 6s ease-in-out 3s   infinite backwards; }
+      .n4 { animation: nodeOn 6s ease-in-out 4.5s infinite backwards; }
+
+      .b1 { transform-box: view-box; transform-origin: 158px 94px; animation: badgeOn 6s ease-in-out 0s   infinite backwards; }
+      .b2 { transform-box: view-box; transform-origin: 408px 94px; animation: badgeOn 6s ease-in-out 1.5s infinite backwards; }
+      .b3 { transform-box: view-box; transform-origin: 658px 94px; animation: badgeOn 6s ease-in-out 3s   infinite backwards; }
+      .b4 { transform-box: view-box; transform-origin: 908px 94px; animation: badgeOn 6s ease-in-out 4.5s infinite backwards; }
+
+      .h1 { transform-box: view-box; transform-origin: 158px 130px; animation: haloOn 6s ease-out 0s   infinite backwards; }
+      .h2 { transform-box: view-box; transform-origin: 408px 130px; animation: haloOn 6s ease-out 1.5s infinite backwards; }
+      .h3 { transform-box: view-box; transform-origin: 658px 130px; animation: haloOn 6s ease-out 3s   infinite backwards; }
+      .h4 { transform-box: view-box; transform-origin: 908px 130px; animation: haloOn 6s ease-out 4.5s infinite backwards; }
+
+      .track { stroke-dasharray: 8 6; animation: dash 1.1s linear infinite; }
+      .a1 { animation: arrowBlink 6s ease-in-out 0.9s infinite backwards; }
+      .a2 { animation: arrowBlink 6s ease-in-out 2.4s infinite backwards; }
+      .a3 { animation: arrowBlink 6s ease-in-out 3.9s infinite backwards; }
+
+      @media (prefers-reduced-motion: reduce) {
+        .n1,.n2,.n3,.n4,.b1,.b2,.b3,.b4,.h1,.h2,.h3,.h4,.track,.a1,.a2,.a3 {
+          animation: none; opacity: 1; transform: none;
+        }
+        .h1,.h2,.h3,.h4 { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1000" height="260" rx="14" fill="#090a0d"/>
+  <text class="cap" x="24" y="30">THE TRAINING LOOP</text>
+
+  <!-- connectors -->
+  <g stroke="#1f232b" stroke-width="2" fill="none">
+    <path class="track" d="M196 130 H334"/>
+    <path class="track" d="M446 130 H584"/>
+    <path class="track" d="M696 130 H834"/>
+  </g>
+  <g fill="#ccff00">
+    <path class="a1" d="M334 130 l-11 -6 v12 z"/>
+    <path class="a2" d="M584 130 l-11 -6 v12 z"/>
+    <path class="a3" d="M834 130 l-11 -6 v12 z"/>
+  </g>
+
+  <!-- traveling pulse -->
+  <g>
+    <circle r="9" fill="url(#pulseGlow)">
+      <animateMotion dur="6s" repeatCount="indefinite"
+        path="M158 130 H408 H658 H908"
+        keyPoints="0;0;0.333;0.333;0.666;0.666;1;1"
+        keyTimes="0;0.08;0.3;0.42;0.63;0.75;0.95;1"
+        calcMode="linear"/>
+    </circle>
+    <circle r="3.4" fill="#ccff00">
+      <animateMotion dur="6s" repeatCount="indefinite"
+        path="M158 130 H408 H658 H908"
+        keyPoints="0;0;0.333;0.333;0.666;0.666;1;1"
+        keyTimes="0;0.08;0.3;0.42;0.63;0.75;0.95;1"
+        calcMode="linear"/>
+    </circle>
+  </g>
+
+  <!-- node 1: Browse -->
+  <g>
+    <circle class="h1" cx="158" cy="130" r="54" fill="none" stroke="#ccff00" stroke-width="2"/>
+    <rect class="n1" x="58" y="94" width="200" height="104" rx="12" fill="url(#fCard)" stroke="#1f232b" stroke-width="2"/>
+    <circle class="b1" cx="158" cy="94" r="13" fill="#ccff00"/>
+    <text class="num" x="158" y="99" text-anchor="middle">1</text>
+    <g stroke="#ccff00" stroke-width="2.2" fill="none" transform="translate(78, 118)">
+      <rect x="0" y="0" width="13" height="13" rx="2"/>
+      <rect x="18" y="0" width="13" height="13" rx="2"/>
+      <rect x="0" y="18" width="13" height="13" rx="2"/>
+      <rect x="18" y="18" width="13" height="13" rx="2"/>
+    </g>
+    <text class="title" x="124" y="136">BROWSE</text>
+    <text class="desc" x="124" y="156">12 lifts, 3×4 grid</text>
+    <text class="desc" x="78" y="180">Chest · Back · Legs · Core</text>
+  </g>
+
+  <!-- node 2: Sort -->
+  <g>
+    <circle class="h2" cx="408" cy="130" r="54" fill="none" stroke="#ccff00" stroke-width="2"/>
+    <rect class="n2" x="308" y="94" width="200" height="104" rx="12" fill="url(#fCard)" stroke="#1f232b" stroke-width="2"/>
+    <circle class="b2" cx="408" cy="94" r="13" fill="#ccff00"/>
+    <text class="num" x="408" y="99" text-anchor="middle">2</text>
+    <g stroke="#ccff00" stroke-width="2.2" fill="none" stroke-linecap="round" transform="translate(328, 118)">
+      <path d="M0 2 H22 M0 9 H15 M0 16 H8"/>
+      <path d="M26 6 l5 5 5 -5"/>
+    </g>
+    <text class="title" x="374" y="136">SORT</text>
+    <text class="desc" x="374" y="156">Duration · kcal · ★</text>
+    <text class="desc" x="328" y="180">Re-orders instantly</text>
+  </g>
+
+  <!-- node 3: Add to plan -->
+  <g>
+    <circle class="h3" cx="658" cy="130" r="54" fill="none" stroke="#ccff00" stroke-width="2"/>
+    <rect class="n3" x="558" y="94" width="200" height="104" rx="12" fill="url(#fCard)" stroke="#1f232b" stroke-width="2"/>
+    <circle class="b3" cx="658" cy="94" r="13" fill="#ccff00"/>
+    <text class="num" x="658" y="99" text-anchor="middle">3</text>
+    <g stroke="#ccff00" stroke-width="2.4" fill="none" stroke-linecap="round" transform="translate(578, 118)">
+      <rect x="0" y="0" width="22" height="16" rx="3"/>
+      <path d="M11 4 V12 M7 8 H15"/>
+    </g>
+    <text class="title" x="624" y="136">ADD</text>
+    <text class="desc" x="624" y="156">5-lift daily cap</text>
+    <text class="desc" x="578" y="180">Toast + badge sync</text>
+  </g>
+
+  <!-- node 4: Log done -->
+  <g>
+    <circle class="h4" cx="908" cy="130" r="54" fill="none" stroke="#ccff00" stroke-width="2"/>
+    <rect class="n4" x="808" y="94" width="168" height="104" rx="12" fill="url(#fCard)" stroke="#1f232b" stroke-width="2"/>
+    <circle class="b4" cx="908" cy="94" r="13" fill="#ccff00"/>
+    <text class="num" x="908" y="99" text-anchor="middle">4</text>
+    <g stroke="#ccff00" stroke-width="2.6" fill="none" stroke-linecap="round" transform="translate(828, 118)">
+      <path d="M0 8 l6 6 l12 -13"/>
+    </g>
+    <text class="title" x="856" y="136">LOG IT</text>
+    <text class="desc" x="856" y="156">Confetti burst</text>
+    <text class="desc" x="828" y="180">Metrics recalculate</text>
+  </g>
+</svg>
