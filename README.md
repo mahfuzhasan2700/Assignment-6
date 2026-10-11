@@ -1,6 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:090a0d,60:1f232b,100:ccff00&height=180&section=header&text=FITLOG&fontColor=ccff00&fontSize=76&fontAlign=50&fontAlignY=36&desc=Workout%20Library%20%26%20Daily%20Training%20Log&descAlign=50&descSize=16&descAlignY=58&animation=fadeIn" width="100%" alt="FitLog animated banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:090a0d,60:1f232b,100:ccff00&height=180&section=header&text=FITLOG&fontColor=ccff00&fontSize=76&fontAlign=50&fontAlignY=36&desc=Workout%20Library%20%26%20Daily%20Training%20Log&descAlign=50&descSize=16&descAlignY=58&animation=fadeIn" width="100%" alt="FitLog animated header banner" />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner.png" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner.png" />
+  <img src="assets/banner.png" width="180" alt="FitLog equipment mark" />
+</picture>
 
 <img src="assets/hero-animated.svg" width="100%" alt="FitLog hero: train with intent, log every set. Twelve lifts, five-lift daily cap, live minutes and calories" />
 
@@ -20,22 +26,24 @@
 <br />
 
 <p align="center">
-  <a href="#-see-it-moving"><strong>Demo</strong></a> &nbsp;·&nbsp;
-  <a href="#-what-it-is"><strong>Overview</strong></a> &nbsp;·&nbsp;
-  <a href="#-the-training-loop"><strong>The Loop</strong></a> &nbsp;·&nbsp;
-  <a href="#-key-features"><strong>Features</strong></a> &nbsp;·&nbsp;
-  <a href="#-live-telemetry"><strong>Telemetry</strong></a> &nbsp;·&nbsp;
-  <a href="#-architecture"><strong>Architecture</strong></a> &nbsp;·&nbsp;
-  <a href="#-tech-stack"><strong>Stack</strong></a> &nbsp;·&nbsp;
-  <a href="#-api-reference"><strong>API</strong></a> &nbsp;·&nbsp;
-  <a href="#-run-it-locally"><strong>Run Locally</strong></a>
+  <a href="#-demo"><strong>Demo</strong></a> &nbsp;•&nbsp;
+  <a href="#-links"><strong>Links</strong></a> &nbsp;•&nbsp;
+  <a href="#-overview"><strong>Overview</strong></a> &nbsp;•&nbsp;
+  <a href="#-the-training-loop"><strong>Lifecycle</strong></a> &nbsp;•&nbsp;
+  <a href="#-key-features"><strong>Features</strong></a> &nbsp;•&nbsp;
+  <a href="#-live-telemetry"><strong>Telemetry</strong></a> &nbsp;•&nbsp;
+  <a href="#-architecture"><strong>Architecture</strong></a> &nbsp;•&nbsp;
+  <a href="#-tech-stack"><strong>Tech Stack</strong></a> &nbsp;•&nbsp;
+  <a href="#-project-structure"><strong>Structure</strong></a> &nbsp;•&nbsp;
+  <a href="#-api-reference"><strong>API</strong></a> &nbsp;•&nbsp;
+  <a href="#-getting-started"><strong>Getting Started</strong></a>
 </p>
 
 <img src="assets/divider-sweep.svg" width="100%" height="8" alt="" />
 
 </div>
 
-## 🎬 See It Moving
+## 🎬 Demo
 
 <div align="center">
 
@@ -46,22 +54,24 @@
   </picture>
 </a>
 
-<p><em>Sort the library → inspect a lift → lock it into today's plan → metrics recalculate → mark it done and the confetti fires.<br />Click the GIF to open the live build.</em></p>
+<p><em>Sort the library → inspect a lift → lock it into today's plan → metrics recalculate → mark it done and the confetti fires.<br />Click the animation to open the live build.</em></p>
 
 <img src="assets/divider-sweep.svg" width="100%" height="8" alt="" />
 
 </div>
 
-| | Resource | Link |
-| :--: | :--- | :--- |
-| 🌐 | **Live application** | [fitlog-workouts.netlify.app](https://fitlog-workouts.netlify.app/) |
-| 🐙 | **Source repository** | [github.com/mahfuzhasan2700/Assignment-6](https://github.com/mahfuzhasan2700/Assignment-6) |
-| ⚡ | **Worker REST API** | [api.abcz.workers.dev/api/fitlog](https://api.abcz.workers.dev/api/fitlog) |
-| 🎨 | **Design sources** | [Fit Log.fig](UI/Fit%20Log.fig) • [Fit Log.penpot](UI/Fit%20Log.penpot) |
+## 🔗 Links
+
+| Resource | Link | Description |
+| :--- | :--- | :--- |
+| **Live application** | [fitlog-workouts.netlify.app](https://fitlog-workouts.netlify.app/) | Production deployment hosted on Netlify |
+| **Source repository** | [github.com/mahfuzhasan2700/Assignment-6](https://github.com/mahfuzhasan2700/Assignment-6) | GitHub repository with full commit history |
+| **Worker REST API** | [api.abcz.workers.dev/api/fitlog](https://api.abcz.workers.dev/api/fitlog) | Cloudflare Worker REST API endpoint |
+| **Design sources** | [Fit Log.fig](UI/Fit%20Log.fig) • [Fit Log.penpot](UI/Fit%20Log.penpot) | Figma and Penpot interface design systems |
 
 <div align="center"><img src="assets/divider-sweep.svg" width="100%" height="8" alt="" /></div>
 
-## 📖 What It Is
+## 📖 Overview
 
 FitLog is a dark, no-nonsense gym companion. Browse a library of twelve lifts covering every major muscle group, open any one of them for the full technical breakdown, then lock it into today's plan and watch the minutes and calories add up as you work.
 
@@ -225,7 +235,7 @@ Nothing on this dashboard is stored. All four numbers are derived from `todayPla
 Next.js App Router for routing, React Context for state, `localStorage` for persistence, and a bundled dataset as the failover tier.
 
 <details>
-<summary><strong>🗺️ Open the data flow diagram</strong></summary>
+<summary><strong>🗺️ System Architecture Diagram</strong></summary>
 
 <br />
 
@@ -294,7 +304,7 @@ flowchart TD
 ## 📂 Project Structure
 
 <details>
-<summary><strong>📁 Open the file tree</strong></summary>
+<summary><strong>📁 Project Structure Tree</strong></summary>
 
 <br />
 
@@ -351,7 +361,7 @@ Two endpoints, served by a Cloudflare Worker:
 | `GET` | `https://api.abcz.workers.dev/api/fitlog/:id` | One workout by numeric id |
 
 <details>
-<summary><strong>📦 Open a sample response object</strong></summary>
+<summary><strong>📦 Sample Response Object</strong></summary>
 
 <br />
 
@@ -391,7 +401,7 @@ Two endpoints, served by a Cloudflare Worker:
 ## 🎨 Design System
 
 <details>
-<summary><strong>🎨 Open the palette and typography</strong></summary>
+<summary><strong>🎨 Color Tokens and Typography</strong></summary>
 
 <br />
 
@@ -414,33 +424,44 @@ Two endpoints, served by a Cloudflare Worker:
 
 <div align="center"><img src="assets/divider-sweep.svg" width="100%" height="8" alt="" /></div>
 
-## 🚀 Run It Locally
+## 🚀 Getting Started
 
 **Prerequisites** — Node.js `18.17+` (20 recommended), npm, and Git.
 
+### 1. Clone the repository
 ```bash
 git clone https://github.com/mahfuzhasan2700/Assignment-6.git
 ```
 
+### 2. Navigate to the project directory
 ```bash
 cd Assignment-6/B14-A6-Fit-Log
 ```
 
+### 3. Install dependencies
 ```bash
 npm install
 ```
 
+### 4. Run the development server
 ```bash
 npm run dev
 ```
 
-Then open **[http://localhost:3000](http://localhost:3000)**.
+Then open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
-> [!TIP]
-> Verify the production bundle before you deploy:
-> ```bash
-> npm run lint && npm run build && npm start
-> ```
+### 5. Production build and verification
+```bash
+npm run lint
+```
+
+```bash
+npm run build
+```
+
+```bash
+npm start
+```
 
 <div align="center"><img src="assets/divider-sweep.svg" width="100%" height="8" alt="" /></div>
 
@@ -454,7 +475,7 @@ Then open **[http://localhost:3000](http://localhost:3000)**.
 
 <div align="center"><img src="assets/divider-sweep.svg" width="100%" height="8" alt="" /></div>
 
-## 📄 Author and License
+## 📄 Author & License
 
 - **Author** — Mahfuz Hasan ([@mahfuzhasan2700](https://github.com/mahfuzhasan2700))
 - **License** — MIT. A `LICENSE` file still needs to be added to the repository root.
