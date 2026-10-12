@@ -123,41 +123,53 @@
   <!-- legend -->
   <g transform="translate(620, 62)">
     <rect x="0" y="-34" width="356" height="292" rx="12" fill="#12141a" stroke="#1f232b" stroke-width="1.5"/>
-    <g class="r1" transform="translate(20, 0)">
-      <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
-      <text class="lg"  x="14" y="0">Next.js App Router</text>
-      <text class="lgv" x="252" y="0">16.3.6</text>
-      <text class="lgd" x="14" y="15">File-based routing, /workout/[id]</text>
+    <g transform="translate(20, 0)">
+      <g class="r1">
+        <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
+        <text class="lg"  x="14" y="0">Next.js App Router</text>
+        <text class="lgv" x="252" y="0">16.3.6</text>
+        <text class="lgd" x="14" y="15">File-based routing, /workout/[id]</text>
+      </g>
     </g>
-    <g class="r2" transform="translate(20, 42)">
-      <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
-      <text class="lg"  x="14" y="0">React</text>
-      <text class="lgv" x="252" y="0">19.2.8</text>
-      <text class="lgd" x="14" y="15">Context state, useMemo selectors</text>
+    <g transform="translate(20, 42)">
+      <g class="r2">
+        <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
+        <text class="lg"  x="14" y="0">React</text>
+        <text class="lgv" x="252" y="0">19.2.8</text>
+        <text class="lgd" x="14" y="15">Context state, useMemo selectors</text>
+      </g>
     </g>
-    <g class="r3" transform="translate(20, 84)">
-      <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
-      <text class="lg"  x="14" y="0">TypeScript</text>
-      <text class="lgv" x="252" y="0">5.x</text>
-      <text class="lgd" x="14" y="15">Typed Workout + SortOption models</text>
+    <g transform="translate(20, 84)">
+      <g class="r3">
+        <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
+        <text class="lg"  x="14" y="0">TypeScript</text>
+        <text class="lgv" x="252" y="0">5.x</text>
+        <text class="lgd" x="14" y="15">Typed Workout + SortOption models</text>
+      </g>
     </g>
-    <g class="r4" transform="translate(20, 126)">
-      <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
-      <text class="lg"  x="14" y="0">Tailwind CSS</text>
-      <text class="lgv" x="252" y="0">v4</text>
-      <text class="lgd" x="14" y="15">Dark industrial tokens, responsive</text>
+    <g transform="translate(20, 126)">
+      <g class="r4">
+        <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
+        <text class="lg"  x="14" y="0">Tailwind CSS</text>
+        <text class="lgv" x="252" y="0">v4</text>
+        <text class="lgd" x="14" y="15">Dark industrial tokens, responsive</text>
+      </g>
     </g>
-    <g class="r5" transform="translate(20, 168)">
-      <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
-      <text class="lg"  x="14" y="0">lucide-react</text>
-      <text class="lgv" x="252" y="0">^1.16</text>
-      <text class="lgd" x="14" y="15">SVG iconography across the UI</text>
+    <g transform="translate(20, 168)">
+      <g class="r5">
+        <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
+        <text class="lg"  x="14" y="0">lucide-react</text>
+        <text class="lgv" x="252" y="0">^1.16</text>
+        <text class="lgd" x="14" y="15">SVG iconography across the UI</text>
+      </g>
     </g>
-    <g class="r6" transform="translate(20, 210)">
-      <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
-      <text class="lg"  x="14" y="0">canvas-confetti</text>
-      <text class="lgv" x="252" y="0">^1.9.4</text>
-      <text class="lgd" x="14" y="15">Set-completion celebration burst</text>
+    <g transform="translate(20, 210)">
+      <g class="r6">
+        <circle cx="0" cy="-4" r="3" fill="#ccff00"/>
+        <text class="lg"  x="14" y="0">canvas-confetti</text>
+        <text class="lgv" x="252" y="0">^1.9.4</text>
+        <text class="lgd" x="14" y="15">Set-completion celebration burst</text>
+      </g>
     </g>
   </g>
 </svg>

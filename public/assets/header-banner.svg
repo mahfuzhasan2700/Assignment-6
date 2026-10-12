@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 180" width="1000" height="180" role="img" aria-label="FitLog animated waving header banner">
+  <title>FitLog — Workout Library &amp; Daily Training Log</title>
+  <defs>
+    <linearGradient id="hdrBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090a0d"/>
+      <stop offset="65%" stop-color="#141820"/>
+      <stop offset="100%" stop-color="#090a0d"/>
+    </linearGradient>
+    <linearGradient id="waveLime" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#090a0d" stop-opacity="0.2"/>
+      <stop offset="35%" stop-color="#ccff00" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#ccff00" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ccff00" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#ccff00"/>
+      <stop offset="100%" stop-color="#a6d400"/>
+    </linearGradient>
+    <radialGradient id="titleGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#ccff00" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#ccff00" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ccff00" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .hdrTitle {
+        font-family: Oswald, Impact, "Arial Narrow", sans-serif;
+        font-size: 72px;
+        font-weight: 700;
+        letter-spacing: 6px;
+        fill: url(#textGrad);
+      }
+      .hdrSub {
+        font-family: Inter, "Segoe UI", Helvetica, sans-serif;
+        font-size: 14px;
+        letter-spacing: 5px;
+        font-weight: 600;
+        fill: #9ca3af;
+      }
+      @keyframes floatPulse {
+        0%, 100% { transform: translateY(0); opacity: 0.95; }
+        50%      { transform: translateY(-3px); opacity: 1; }
+      }
+      @keyframes glowPulse {
+        0%, 100% { opacity: 0.45; transform: scale(0.96); }
+        50%      { opacity: 0.85; transform: scale(1.05); }
+      }
+      .titleGlowEl {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: glowPulse 4s ease-in-out infinite;
+      }
+      .brandGroup {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: floatPulse 3.5s ease-in-out infinite;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .titleGlowEl, .brandGroup { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1000" height="180" fill="url(#hdrBg)"/>
+
+  <!-- Background Animated Waves -->
+  <path fill="none" stroke="url(#waveLime)" stroke-width="2.5" opacity="0.6">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite"
+      values="
+        M0 135 Q250 110 500 135 T1000 135;
+        M0 135 Q250 160 500 135 T1000 135;
+        M0 135 Q250 110 500 135 T1000 135
+      "/>
+  </path>
+
+  <path fill="url(#waveLime)" opacity="0.22">
+    <animate attributeName="d" dur="7s" repeatCount="indefinite"
+      values="
+        M0 145 Q250 120 500 145 T1000 145 L1000 180 L0 180 Z;
+        M0 145 Q250 170 500 145 T1000 145 L1000 180 L0 180 Z;
+        M0 145 Q250 120 500 145 T1000 145 L1000 180 L0 180 Z
+      "/>
+  </path>
+
+  <path fill="#090a0d" opacity="0.95">
+    <animate attributeName="d" dur="9s" repeatCount="indefinite"
+      values="
+        M0 160 Q250 140 500 160 T1000 160 L1000 180 L0 180 Z;
+        M0 160 Q250 175 500 160 T1000 160 L1000 180 L0 180 Z;
+        M0 160 Q250 140 500 160 T1000 160 L1000 180 L0 180 Z
+      "/>
+  </path>
+
+  <!-- Title glow & typography -->
+  <ellipse class="titleGlowEl" cx="500" cy="75" rx="260" ry="55" fill="url(#titleGlow)"/>
+
+  <g class="brandGroup">
+    <text class="hdrTitle" x="500" y="85" text-anchor="middle">FITLOG</text>
+    <text class="hdrSub" x="500" y="118" text-anchor="middle">WORKOUT LIBRARY &amp; DAILY TRAINING LOG</text>
+  </g>
+</svg>

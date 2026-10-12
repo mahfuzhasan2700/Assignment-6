@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:090a0d,60:1f232b,100:ccff00&height=180&section=header&text=FITLOG&fontColor=ccff00&fontSize=76&fontAlign=50&fontAlignY=36&desc=Workout%20Library%20%26%20Daily%20Training%20Log&descAlign=50&descSize=16&descAlignY=58&animation=fadeIn" width="100%" alt="FitLog animated header banner" />
+<img src="assets/header-banner.svg" width="100%" alt="FitLog animated header banner" />
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner.png" />
@@ -486,6 +486,6 @@ npm start
 
 <img src="https://readme-typing-svg.demolab.com?font=Oswald&weight=600&size=20&duration=3000&pause=800&color=9CA3AF&background=090A0D00&center=true&vCenter=true&width=700&height=40&lines=TRAIN+HARD.+LOG+HONEST.;%C2%A9+2026+FITLOG+%E2%80%94+WORKOUT+LIBRARY." alt="Train hard, log honest" />
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ccff00,40:1f232b,100:090a0d&height=140&section=footer&reversal=true&animation=fadeIn" width="100%" alt="" />
+<img src="assets/footer-banner.svg" width="100%" alt="FitLog animated footer wave" />
 
 </div>
